@@ -7,6 +7,7 @@ Using: HTML, CSS, JavaScript
 Libraries:
 SWIPER JS - https://swiperjs.com/
 MIXITUP JS - https://www.kunkalabs.com/mixitup/
+SCROLLREVEAL JS - https://scrollrevealjs.org/
 
 Other sources:
 FONTS - Google Fonts - https://fonts.google.com/
