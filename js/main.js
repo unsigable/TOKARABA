@@ -38,8 +38,8 @@ const scrollHeader = () =>{
 }
 window.addEventListener('scroll', scrollHeader)
 
-/*=============== POPULAR SWIPER ===============*/
-let swiperPopular = new Swiper(".popular__container", {
+/*=============== CHARGES SWIPER ===============*/
+let swiperCharges = new Swiper(".charges__container", {
     loop: true,
     spaceBetween: 24,
     slidesPerView: 'auto',
@@ -59,24 +59,24 @@ let swiperPopular = new Swiper(".popular__container", {
     },
   });
 
-/*=============== MIXITUP FILTER FEATURED ===============*/
-let mixerFeatured = mixitup('.featured__content', {
+/*=============== MIXITUP FILTER CATALOG ===============*/
+let mixerCatalog = mixitup('.catalog__content', {
     selectors: {
-        target: '.featured__card'
+        target: '.catalog__card'
     },
     animation: {
         duration: 300
     }
 });
 
-/* Link active featured */ 
-const linkFeatured = document.querySelectorAll('.featured__item')
+/* Link active catalog */ 
+const linkCatalog = document.querySelectorAll('.catalog__item')
 
-function activeFeatured(){
-    linkFeatured.forEach(l=> l.classList.remove('active-featured'))
-    this.classList.add('active-featured')
+function activeCatalog(){
+    linkCatalog.forEach(l=> l.classList.remove('active-catalog'))
+    this.classList.add('active-catalog')
 }
-linkFeatured.forEach(l=> l.addEventListener('click', activeFeatured))
+linkCatalog.forEach(l=> l.addEventListener('click', activeCatalog))
 
 /*=============== SHOW SCROLL UP ===============*/ 
 const scrollUp = () =>{
@@ -117,14 +117,15 @@ const sr = ScrollReveal({
     // reset: true
 })
 
-sr.reveal(`.home__title, .popular__container, .features__img, .featured__filters`)
+sr.reveal(`.home__title, .catalog__filters, .map__img, .charges__container`)
 sr.reveal(`.home__subtitle`, {delay: 500})
 sr.reveal(`.home__elec`, {delay: 600})
 sr.reveal(`.home__img`, {delay: 800})
 sr.reveal(`.home__car-data`, {delay: 900, interval: 100, origin: 'bottom'})
 sr.reveal(`.home__button`, {delay: 1000, origin: 'bottom'})
+sr.reveal(`.about__content, .adv__content, .credit__content`, {interval: 150})
 sr.reveal(`.compare__data, .order__data, .news__group, .faq__group`, {origin: 'left'})
 sr.reveal(`.compare__img, .order__img, .news__data, .faq__data`, {origin: 'right'})
 sr.reveal(`.map__bg`, {delay: 600, origin: 'bottom'})
 sr.reveal(`.map__card`, {interval: 300})
-sr.reveal(`.about__content, .adv__content, .featured__card, .credit__content, .partners__content, .logos__content, .footer__content`, {interval: 100})
+sr.reveal(`.catalog__card, .partners__content, .logos__content, .footer__content`, {interval: 100})
