@@ -86,6 +86,7 @@ img {
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 1024px;
+  /* max-width: 94%; */
   margin-right: 1.5rem;
   margin-left: 1.5rem;
 }
@@ -139,6 +140,10 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
+}
+
+.header .container {
+  max-width: 94%;
 }
 
 .nav {
@@ -414,10 +419,10 @@ img {
   font-size: var(--smaller-font-size);
 }
 
-.about__title {
+/* .about__title {
   text-align: initial;
   margin-bottom: 2rem;
-}
+} */
 
 .about__description {
   margin-bottom: 2rem;
