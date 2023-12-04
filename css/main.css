@@ -1,5 +1,8 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600&display=swap");
+/* font-family: 'Exo', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap');
+/* font-family: 'Jura', sans-serif; */
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -7,18 +10,20 @@
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(219, 69%, 56%);
-  --first-color-alt: hsl(219, 69%, 52%);
-  --title-color: hsl(219, 8%, 95%);
-  --text-color: hsl(219, 8%, 75%);
-  --text-color-light: hsl(219, 4%, 55%);
+  --first-color: #08915f;
+  --first-color-alt: #00ac2b;
+  /* --first-color: hsl(219, 69%, 56%); */
+  /* --first-color-alt: hsl(219, 69%, 52%); */
+  --title-color: #f2f2f2;
+  --text-color: #babec4;
+  --text-color-light: #888b91;
   --white-color: #fff;
-  --body-color: hsl(219, 4%, 4%);
-  --container-color: hsl(219, 4%, 7%);
+  --body-color: #0a0a0b;
+  --container-color: #111213;
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: 'Exo', sans-serif;
+  --body-font: 'Jura', sans-serif;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
@@ -86,7 +91,6 @@ img {
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 1024px;
-  /* max-width: 94%; */
   margin-right: 1.5rem;
   margin-left: 1.5rem;
 }
@@ -104,6 +108,10 @@ img {
   font-size: var(--h2-font-size);
   text-align: center;
   margin-bottom: 2.5rem;
+}
+
+.section__title span {
+  color: var(--first-color);
 }
 
 .main {
@@ -132,6 +140,15 @@ img {
   filter: blur(64px);
 }
 
+.green {
+  color: hsl(158, 90%, 30%);
+
+  /* color: transparent;
+  white-space: nowrap;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: var(--first-color); */
+}
+
 /*=============== HEADER & NAV ===============*/
 .header {
   width: 100%;
@@ -143,7 +160,7 @@ img {
 }
 
 .header .container {
-  max-width: 94%;
+  max-width: 96%;
 }
 
 .nav {
@@ -157,21 +174,16 @@ img {
 .nav__toggle {
   color: var(--title-color);
   display: inline-flex;
+
+  margin-top: 1.5rem;
+  margin-bottom: 0.9rem;
 }
 
 .nav__logo {
   align-items: center;
   column-gap: .25rem;
-  font-weight: var(--font-medium);
-  transition: .3s;
-}
 
-.nav__logo i {
-  font-size: 1.25rem;
-}
-
-.nav__logo:hover {
-  color: var(--first-color);
+  width: 5rem;
 }
 
 .nav__toggle {
@@ -206,6 +218,7 @@ img {
   text-transform: uppercase;
   color: var(--title-color);
   font-size: var(--h2-font-size);
+  /* font-size: 2rem; */
   font-weight: var(--font-medium);
   transition: .3s;
 }
@@ -248,7 +261,7 @@ img {
 
 .home__container {
   position: relative;
-  padding-top: 4rem;
+  padding-top: 2rem;
   row-gap: 3rem;
 }
 
@@ -256,9 +269,35 @@ img {
   text-align: center;
 }
 
+.home__data::before {
+  content: '';
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  transform: translateY(-50%);
+
+  /* shape */
+  background-color: hsla(219, 33%, 32%, .5);
+  filter: blur(112px);
+  border-radius: 50%;
+
+  /* shape__small */
+  width: 350px;
+  height: 350px;
+}
+
 .home__title {
   font-size: var(--h1-font-size);
   margin-bottom: 1rem;
+
+  text-transform: uppercase;
+}
+
+.home__title span {
+  color: transparent;
+  white-space: nowrap;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: var(--first-color);
 }
 
 .home__subtitle {
@@ -275,6 +314,15 @@ img {
   column-gap: .25rem;
 }
 
+.home__elec a {
+  color: var(--text-color-light);
+  letter-spacing: .1rem;
+}
+
+.home__elec a:hover {
+  color:var(--white-color);
+}
+
 .home__elec i {
   color: var(--first-color);
 }
@@ -282,6 +330,8 @@ img {
 .home__img {
   width: 280px;
   justify-self: center;
+
+  /* position: relative; */
 }
 
 .home__car {
@@ -309,14 +359,19 @@ img {
 }
 
 .home__car-icon {
-  background-color: var(--container-color);
+  /* background-color: var(--container-color);
   border-radius: 50%;
-  padding: .376rem;
+  padding: .376rem; */
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  font-size: .875rem;
+  /* font-size: .875rem; */
   margin-bottom: .75rem;
+}
+
+.home__car-icon i {
+  font-size: 2rem;
+  /* font-size: 1.3rem; */
 }
 
 .home__button {
@@ -344,21 +399,6 @@ img {
   box-shadow: 0 0 12px hsl(158, 98%, 43%);
   transition: .3s;
   animation: button 3s infinite;
-}
-
-.home .shape__big,
-.home .shape__small {
-  position: absolute;
-}
-
-.home .shape__big {
-  left: -9rem;
-  top: -4rem;
-}
-
-.home .shape__small {
-  right: -10rem;
-  bottom: 3rem;
 }
 
 /* Button animate */
@@ -1031,12 +1071,14 @@ img {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: hsl(219, 4%, 24%);
+  border: 3px solid hsl(158, 89%, 30%);
+  background-color: hsl(223, 9%, 15%);
   border-radius: 1rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: hsl(219, 4%, 32%);
+  background-color: var(--first-color);
+  /* background-color: hsl(219, 4%, 32%); */
 }
 
 /*=============== SCROLL UP ===============*/
@@ -1044,10 +1086,11 @@ img {
   position: fixed;
   right: 1rem;
   bottom: -30%;
-  background-color: hsla(0, 0%, 100%, .1);
+  /* background-color: hsla(0, 0%, 100%, .1); */
+  background-color: hsl(158, 89%, 30%);
   backdrop-filter: blur(16px);
   display: inline-flex;
-  padding: 0.45rem;
+  padding: 0.5rem;
   border-radius: .5rem;
   font-size: 1.15rem;
   color: var(--white-color);
@@ -1057,6 +1100,7 @@ img {
 
 .scrollup:hover {
   transform: translateY(-.25rem);
+  background-color: #00ac2b;
 }
 
 /* Show Scroll Up*/
@@ -1121,6 +1165,10 @@ img {
 
 /* For medium devices */
 @media screen and (min-width: 576px) {
+  .home__title {
+    font-size: 3rem;
+  }
+  
   .catalog__content {
     grid-template-columns: repeat(2, 228px);
   }
@@ -1176,6 +1224,11 @@ img {
 
   .nav {
     height: calc(var(--header-height) + 1.5rem);
+  }
+  .nav__logo {
+    width: 7.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
   }
   .nav__toggle,
   .nav__close {
@@ -1241,10 +1294,10 @@ img {
   }
 
   .home__container {
-    padding-top: 2rem;
+    padding-top: 1.5rem;
   }
   .home__img {
-    width: 380px;
+    width: 450px;
     }
   .home__car {
     column-gap: 7rem;
