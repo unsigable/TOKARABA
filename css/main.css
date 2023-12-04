@@ -894,11 +894,6 @@ img {
   font-size: var(--smaller-font-size);
 }
 
-/* .about__title {
-  text-align: initial;
-  margin-bottom: 2rem;
-} */
-
 .faq__description {
   margin-bottom: 2rem;
 }
@@ -1096,15 +1091,15 @@ img {
     width: 340px;
   }
 
+  .credit__container {
+    gap: 2.5rem;
+  }
+
   .order__container {
     grid-template-rows: max-content 180px;
   }
   .order__img {
     width: 340px;
-  }
-
-  .credit__container {
-    gap: 2.5rem;
   }
 
   .news__card {
