@@ -788,10 +788,10 @@ img {
   font-size: var(--smaller-font-size);
 }
 
-/* .about__title {
+.news__data-title {
   text-align: initial;
-  margin-bottom: 2rem;
-} */
+  margin-bottom: 1rem;
+}
 
 .news__description {
   margin-bottom: 2rem;
