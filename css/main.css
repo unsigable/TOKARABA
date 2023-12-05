@@ -160,7 +160,7 @@ img {
 }
 
 .header .container {
-  max-width: 96%;
+  max-width: 94%;
 }
 
 .nav {
@@ -170,20 +170,20 @@ img {
   align-items: center;
 }
 
-.nav__logo,
 .nav__toggle {
   color: var(--title-color);
   display: inline-flex;
 
   margin-top: 1.5rem;
-  margin-bottom: 0.9rem;
+  margin-bottom: 1rem;
 }
 
 .nav__logo {
   align-items: center;
-  column-gap: .25rem;
-
+  /* column-gap: .25rem; */
   width: 5rem;
+  margin-top: 2.1rem;
+  margin-bottom: 1rem;
 }
 
 .nav__toggle {
@@ -204,20 +204,24 @@ img {
 
     overflow-x: scroll;
   }
+
+  .nav__icons {
+    display: none;
+  }
 }
 
 .nav__list {
   display: flex;
   flex-direction: column;
   text-align: center;
-  row-gap: 3rem;
+  row-gap: 2rem;
   padding-top: 9rem;
 }
 
 .nav__link {
   text-transform: uppercase;
   color: var(--title-color);
-  font-size: var(--h2-font-size);
+  font-size: 1.5rem;
   /* font-size: 2rem; */
   font-weight: var(--font-medium);
   transition: .3s;
@@ -281,8 +285,8 @@ img {
 
 .home__container {
   position: relative;
-  padding-top: 2rem;
-  row-gap: 3rem;
+  padding-top: 1.3rem;
+  row-gap: 2rem;
 }
 
 .home__data {
@@ -307,8 +311,8 @@ img {
 }
 
 .home__title {
-  font-size: var(--h1-font-size);
-  margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: .7rem;
 
   text-transform: uppercase;
 }
@@ -322,7 +326,7 @@ img {
 
 .home__subtitle {
   font-size: var(--h3-font-size);
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
 }
 
 .home__elec {
@@ -358,12 +362,12 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 4rem;
+  column-gap: 2.5rem;
   margin-bottom: 2rem;
 }
 
 .home__car-name {
-  font-size: .625rem;
+  font-size: .8rem;
   font-weight: 400;
   color: var(--text-color-light);
 }
@@ -373,7 +377,7 @@ img {
 }
 
 .home__car-number {
-  font-size: var(--h2-font-size);
+  font-size: .875rem;
   font-weight: var(--font-medium);
   margin-bottom: .25rem;
 }
@@ -386,19 +390,48 @@ img {
   justify-content: center;
   align-items: center;
   /* font-size: .875rem; */
-  margin-bottom: .75rem;
+  margin-bottom: .35rem;
 }
 
 .home__car-icon i {
-  font-size: 2rem;
-  /* font-size: 1.3rem; */
+  /* font-size: 2rem; */
+  font-size: 1.5rem;
+}
+
+.home__container button {
+  border: none;
+  /* outline: none; */
+  background: transparent;
+  cursor: pointer;
+
+  border: 2px solid hsl(158, 89%, 30%);
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+}
+
+.home__car-choose {
+  position: absolute;
+  bottom: 2.5rem;
+  left: -10rem;
+}
+
+.home__car-contact {
+  position: absolute;
+  bottom: 2.5rem;
+  right: -10rem;
 }
 
 .home__button {
   position: relative;
-  border: 2px solid hsl(158, 89%, 30%);
-  width: 70px;
-  height: 70px;
+  /* border: 2px solid hsl(158, 89%, 30%); */
+  border: 2px solid var(--first-color);
+  width: 75px;
+  height: 75px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -411,12 +444,14 @@ img {
 
 .home__button::before {
   content: '';
-  border: 2px solid hsl(158, 98%, 43%);
+  /* border: 2px solid hsl(158, 98%, 43%); */
+  border: 2px solid var(--first-color);
   width: 90px;
   height: 90px;
   position: absolute;
   border-radius: 50%;
-  box-shadow: 0 0 12px hsl(158, 98%, 43%);
+  /* box-shadow: 0 0 12px hsl(158, 98%, 43%); */
+  box-shadow: 0 0 12px var(--first-color);
   transition: .3s;
   animation: button 3s infinite;
 }
@@ -1173,7 +1208,7 @@ img {
   }
 
   .home__car {
-    column-gap: 2rem;
+    column-gap: 1.7rem;
   }
 
   .about__container {
@@ -1221,8 +1256,21 @@ img {
 
 /* For medium devices */
 @media screen and (min-width: 576px) {
+  .nav__logo {
+    width: 6.5rem;
+  }
+  
   .home__title {
     font-size: 3rem;
+  }
+
+  .home__car {
+    column-gap: 3.5rem;
+  }
+
+  .home__car-number {
+    font-size: 1rem;
+    margin-bottom: .5rem;
   }
   
   .catalog__content {
@@ -1283,7 +1331,7 @@ img {
   }
   .nav__logo {
     width: 7.5rem;
-    margin-top: 2rem;
+    margin-top: 2.5rem;
     margin-bottom: 1.5rem;
   }
   .nav__toggle,
@@ -1296,8 +1344,15 @@ img {
     padding-top: 0;
   }
   .nav__link {
-    font-size: var(--normal-font-size);
+    font-size: 1.2rem;
     text-transform: initial;
+  }
+  .nav__icons {
+    display: block;
+  }
+
+  section#home {
+    padding-top: 5rem;
   }
 
   .about__container {
@@ -1350,7 +1405,7 @@ img {
   }
 
   .home__container {
-    padding-top: 1.5rem;
+    padding-top: 2.5rem;
   }
   .home__img {
     width: 450px;
@@ -1358,9 +1413,13 @@ img {
   .home__car {
     column-gap: 7rem;
   }
-  .home__car-icon {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
+  .home__car-number {
+    font-size: 1.3rem;
+    /* margin-bottom: .5rem; */
+  }
+  .home__car-icon i {
+    font-size: 2rem;
+    /* margin-bottom: .9rem; */
   }
 
   .about__container {
@@ -1392,8 +1451,8 @@ img {
     width: 3.8rem;
   }
   .catalog__content {
-    grid-template-columns: repeat(3, 248px);
-    gap: 4rem;
+    grid-template-columns: repeat(4, 245px);
+    gap: 3rem;
   }
 
   .compare__container {
