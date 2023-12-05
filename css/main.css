@@ -864,6 +864,9 @@ img {
 .charges__card {
   position: relative;
   width: 238px;
+  /* ++++ */
+  height: 238px;
+  /* ++++ */
   background-color: var(--container-color);
   padding: 2rem 1.5rem 1.5rem;
   border-radius: 1rem;
@@ -896,12 +899,8 @@ img {
 
 .charges__img {
   width: 160px;
-  margin: 0.75rem 0 1.25rem 1.5rem;
+  margin: 0.75rem 0 1.75rem 1.5rem;
   transition: .3s;
-}
-
-.charges__price {
-  font-size: var(--h3-font-size);
 }
 
 .charges__button {
@@ -913,14 +912,27 @@ img {
   bottom: 0;
   border-radius: 1rem 0 1rem 0;
   cursor: pointer;
+
+  width: 20%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  overflow: hidden;
 }
 
 .charges__button i {
   font-size: 1.25rem;
+  margin-right: 1.2rem;
 }
 
 .charges__card:hover .charges__img {
   transform: translateY(-.25rem);
+}
+
+.charges__card:hover .charges__button {
+  width: 100%;
 }
 
 /* Swiper class */
@@ -1484,7 +1496,7 @@ img {
   }
   .charges__img {
     width: 180px;
-    margin: .75rem 0 1.25rem 2rem;
+    margin: .75rem 0 1.75rem 2rem;
   }
 
   .faq__container {
