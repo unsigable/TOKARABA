@@ -16,7 +16,7 @@
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="./css/main.css">
 
-        <title>TOKARABA - Зарядные станции и Электромобили на заказ</title>
+        <title>Зарядные станции и Электромобили на заказ | TOKARABA</title>
 
     </head>
     <body>
@@ -24,29 +24,50 @@
         <header class="header" id="header">
             <nav class="nav container">
                 <a href="#" class="nav__logo">
-                    <i class="ri-steering-line"></i>
-                    Elecar
+                    <img src="./img/logo.png" alt="TOKARABA">
                 </a>
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">Home</a>
+                            <a href="#home" class="nav__link active-link">Главная</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#about" class="nav__link">About</a>
+                            <a href="#catalog" class="nav__link">Каталог</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#popular" class="nav__link">Popular</a>
+                            <a href="#news" class="nav__link">Статьи</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#featured" class="nav__link">Featured</a>
+                            <a href="#map" class="nav__link">Карта</a>
                         </li>
                     </ul>
 
                     <div class="nav__close" id="nav-close">
                         <i class="ri-close-line"></i>
                     </div>
+                </div>
+
+                <div class="nav__icons">
+                    <ul class="nav__icons-list">
+                        <li class="nav__icons-item">
+                            <a href="#" class="nav__icons-link search">
+                                <i class="ri-search-2-line"></i>
+                            </a>
+                        </li>
+
+                        <li class="nav__icons-item">
+                            <a href="#" class="nav__icons-link theme">
+                                <i class="ri-flashlight-line"></i>
+                            </a>
+                        </li>
+
+                        <li class="nav__icons-item">
+                            <a href="#" class="nav__icons-link language">
+                                <i class="ri-global-line"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
 
                 <!-- Toggle button -->
@@ -60,76 +81,1623 @@
         <main class="main">
             <!--==================== HOME ====================-->
             <section class="home section" id="home">
-                <div class="shape shape__big"></div>
-                <div class="shape shape__small"></div>
+                <!-- <div class="shape shape__big"></div> -->
+                <!-- <div class="shape shape__small"></div> -->
 
                 <div class="home__container container grid">
                     <div class="home__data">
                         <h1 class="home__title">
-                            Choose The Best Car
+                            <!-- Заказать <span>электромобиль</span> -->
+                            Выбрать <span>электромобиль</span>
+                            <!-- <span>Электромобили</span> на заказ -->
                         </h1>
 
                         <h2 class="home__subtitle">
-                            Porsche Mission E
+                            Byd yuan plus
                         </h2>
 
                         <h3 class="home__elec">
-                            <i class="ri-flashlight-fill"></i> Electric car
+                            <i class="ri-flashlight-fill"></i>
+                                <a href="#">Описание</a>
+                            <i class="ri-flashlight-fill"></i>
                         </h3>
                     </div>
 
-                    <img src="./img/offer.png" alt="" class="home__img">
+                    <img src="./img/car/home/byd_yuan_plus.png" alt="" class="home__img">
 
                     <div class="home__car">
                         <div class="home__car-data">
                             <div class="home__car-icon">
-                                <i class="ri-temp-cold-line"></i>
+                                <i class="ri-speed-up-fill"></i>
                             </div>
-                            <h2 class="home__car-number">24°</h2>
-                            <h3 class="home__car-name">TEMPERATURE</h3>
+                            <h2 class="home__car-number">185 км/ч</h2>
+                            <h3 class="home__car-name">МАКС. <br>СКОРОСТЬ</h3>
                         </div>
 
                         <div class="home__car-data">
                             <div class="home__car-icon">
-                                <i class="ri-dashboard-3-line"></i>
+                                <i class="ri-route-line"></i>
                             </div>
-                            <h2 class="home__car-number">873</h2>
-                            <h3 class="home__car-name">MILEAGE</h3>
+                            <h2 class="home__car-number">610 км</h2>
+                            <h3 class="home__car-name">ЗАПАС <br>ХОДА</h3>
                         </div>
 
                         <div class="home__car-data">
                             <div class="home__car-icon">
-                                <i class="ri-flashlight-fill"></i>
+                                <i class="ri-battery-charge-line"></i>
                             </div>
-                            <h2 class="home__car-number">94%</h2>
-                            <h3 class="home__car-name">BATTERY</h3>
+                            <h2 class="home__car-number">79 кВт/ч</h2>
+                            <h3 class="home__car-name">РАСХОД <br>БАТАРЕИ</h3>
                         </div>
                     </div>
 
-                    <a href="#" class="home__button">START</a>
+                    <div class="home__car-choose">
+                        <button class="home__button">PREV</button>
+                    </div>
+
+                    <div class="home__car-contact">
+                        <button class="home__button">NEXT</button>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== LOGOS ====================-->
+            <section class="logos section">
+                <div class="logos__container container grid">
+                    <div class="logos__content">
+                        <img src="./img/logo1.png" alt="" class="logos__img">
+                    </div>
+
+                    <div class="logos__content">
+                        <img src="./img/logo2.png" alt="" class="logos__img">
+                    </div>
+
+                    <div class="logos__content">
+                        <img src="./img/logo3.png" alt="" class="logos__img">
+                    </div>
+
+                    <div class="logos__content">
+                        <img src="./img/logo4.png" alt="" class="logos__img">
+                    </div>
+
+                    <div class="logos__content">
+                        <img src="./img/logo5.png" alt="" class="logos__img">
+                    </div>
+
+                    <div class="logos__content">
+                        <img src="./img/logo6.png" alt="" class="logos__img">
+                    </div>
                 </div>
             </section>
 
             <!--==================== ABOUT ====================-->
-            <section class="about section" id="about">
+            <section class="about section">
+                <h2 class="section__title">
+                    Заказать <span>Электромобиль</span><br>
+                    <span> в Кыргызстане</span> Легко!
+                </h2>
+                
                 <div class="about__container container grid">
-                    <div class="about__group">
-                        <img src="./img/about.png" alt="" class="about__img">
+                    <div class="about__card">
+                        <div class="about__number">
+                            <button class="about__button">1</button>
+                        </div>
 
-                        <div class="about__card">
-                            <h3 class="about__card-title">2.500+</h3>
-                            <p class="about__card-description">
+                        <h3 class="about__card-text">
+                            Выберите подходящий Вам электромобиль
+                        </h3>
+                    </div>
+
+                    <div class="about__card">
+                        <div class="about__number">
+                            <button class="about__button">2</button>
+                        </div>
+
+                        <h3 class="about__card-text">
+                            Оформите заявку, уточнив сроки и условия поставки
+                        </h3>
+                    </div>
+
+                    <div class="about__card">
+                        <div class="about__number">
+                            <button class="about__button">3</button>
+                        </div>
+
+                        <h3 class="about__card-text">
+                            Подпишите договор и внесите оплату
+                        </h3>
+                    </div>
+
+                    <div class="about__card">
+                        <div class="about__number">
+                            <button class="about__button">4</button>
+                        </div>
+
+                        <h3 class="about__card-text">
+                            Дождитесь доставки и станьте счастливым автовладельцем
+                        </h3>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ADVENTAGES ====================-->
+            <section class="adv section">
+                <h2 class="section__title">
+                    Наши Преимущества
+                </h2>
+                
+                <div class="adv__container container grid">
+                    <div class="adv__content">
+                        <img src="./img/logo1.png" alt="" class="adv__img">
+                    </div>
+
+                    <div class="adv__content">
+                        <img src="./img/logo2.png" alt="" class="adv__img">
+                    </div>
+
+                    <div class="adv__content">
+                        <img src="./img/logo3.png" alt="" class="adv__img">
+                    </div>
+
+                    <div class="adv__content">
+                        <img src="./img/logo4.png" alt="" class="adv__img">
+                    </div>
+
+                    <div class="adv__content">
+                        <img src="./img/logo5.png" alt="" class="adv__img">
+                    </div>
+
+                    <div class="adv__content">
+                        <img src="./img/logo6.png" alt="" class="adv__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== CATALOG ====================-->
+            <section class="catalog section" id="catalog">
+                <h2 class="section__title">
+                    Каталог Электромобилей
+                </h2>
+
+                <div class="catalog__container container">
+                    <!--==================== FILTER ====================-->
+                    <ul class="catalog__filters">
+                        <li>
+                            <button class="catalog__item active-catalog" data-filter="all">
+                                <span>ВСЕ</span>
+                            </button>
+                        </li>
+
+                        <li>
+                            <button class="catalog__item" data-filter=".byd">
+                                <img src="./img/icons_128x/byd.png" alt="">
+                            </button>
+                        </li>
+
+                        <li>
+                            <button class="catalog__item" data-filter=".geely">
+                                <img src="./img/icons_128x/geely.png" alt="">
+                            </button>
+                        </li>
+
+                        <li>
+                            <button class="catalog__item" data-filter=".wm">
+                                <img src="./img/icons_128x/wm.png" alt="">
+                            </button>
+                        </li>
+
+                        <li>
+                            <button class="catalog__item" data-filter=".bmw">
+                                <img src="./img/icons_128x/bmw.png" alt="">
+                            </button>
+                        </li>
+
+                        <li>
+                            <button class="catalog__item" data-filter=".changan">
+                                <img src="./img/icons_128x/changan.png" alt="">
+                            </button>
+                        </li>
+
+                        <li>
+                            <button class="catalog__item" data-filter=".chery">
+                                <img src="./img/icons_128x/chery.png" alt="">
+                            </button>
+                        </li>
+
+                        <li>
+                            <button class="catalog__item" data-filter=".dfm">
+                                <img src="./img/icons_128x/dfm.png" alt="">
+                            </button>
+                        </li>
+
+                        <li>
+                            <button class="catalog__item" data-filter=".faw">
+                                <img src="./img/icons_128x/faw.png" alt="">
+                            </button>
+                        </li>
+
+                        <li>
+                            <button class="catalog__item" data-filter=".gac">
+                                <img src="./img/icons_128x/gac.png" alt="">
+                            </button>
+                        </li>
+
+                        <li>
+                            <button class="catalog__item" data-filter=".greatwall">
+                                <img src="./img/icons_128x/greatwall.png" alt="">
+                            </button>
+                        </li>
+
+                        <li>
+                            <button class="catalog__item" data-filter=".hafei">
+                                <img src="./img/icons_128x/hafei.png" alt="">
+                            </button>
+                        </li>
+
+                        <li>
+                            <button class="catalog__item" data-filter=".honda">
+                                <img src="./img/icons_128x/honda.png" alt="">
+                            </button>
+                        </li>
+
+                        <li>
+                            <button class="catalog__item" data-filter=".hozon">
+                                <img src="./img/icons_128x/hozon.png" alt="">
+                            </button>
+                        </li>
+
+                        <li>
+                            <button class="catalog__item" data-filter=".jac">
+                                <img src="./img/icons_128x/jac.png" alt="">
+                            </button>
+                        </li>
+
+                        <li>
+                            <button class="catalog__item" data-filter=".liauto">
+                                <img src="./img/icons_128x/li_auto.png" alt="">
+                            </button>
+                        </li>
+
+                        <li>
+                            <button class="catalog__item" data-filter=".nio">
+                                <img src="./img/icons_128x/nio.png" alt="">
+                            </button>
+                        </li>
+
+                        <li>
+                            <button class="catalog__item" data-filter=".nissan">
+                                <img src="./img/icons_128x/nissan.png" alt="">
+                            </button>
+                        </li>
+
+                        <li>
+                            <button class="catalog__item" data-filter=".tesla">
+                                <img src="./img/icons_128x/tesla.png" alt="">
+                            </button>
+                        </li>
+
+                        <li>
+                            <button class="catalog__item" data-filter=".toyota">
+                                <img src="./img/icons_128x/toyota.png" alt="">
+                            </button>
+                        </li>
+
+                        <li>
+                            <button class="catalog__item" data-filter=".xpeng">
+                                <img src="./img/icons_128x/xpeng.png" alt="">
+                            </button>
+                        </li>
+                    </ul>
+
+                    <!--==================== MODELS ====================-->
+                    <div class="catalog__content grid">
+                        <article class="catalog__card mix byd">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="catalog__title">Han EV</h1>
+
+                            <h3 class="catalog__subtitle">Byd</h3>
+
+                            <img src="./img/car/catalog/byd_han_ev.png" alt="" class="catalog__img">
+
+                            <div class="catalog__data">
+                                <div class="catalog__data-group">
+                                    <i class="ri-dashboard-3-line"></i> 185 км/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-route-line"></i> 610 км
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-battery-charge-line"></i> 79 кВт/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-charging-pile-2-line"></i> 10 ч
+                                </div>
+                            </div>
+
+                            <a href="#" class="catalog__button">
+                                <i class="ri-add-circle-line"></i>
+                                <span>Описание</span>
+                            </a>
+                        </article>
+
+                        <article class="catalog__card mix byd">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="catalog__title">Song Plus</h1>
+
+                            <h3 class="catalog__subtitle">Byd</h3>
+
+                            <img src="./img/car/catalog/byd_song_plus.png" alt="" class="catalog__img">
+
+                            <div class="catalog__data">
+                                <div class="catalog__data-group">
+                                    <i class="ri-dashboard-3-line"></i> 185 км/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-route-line"></i> 610 км
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-battery-charge-line"></i> 79 кВт/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-charging-pile-2-line"></i> 10 ч
+                                </div>
+                            </div>
+
+                            <a href="#" class="catalog__button">
+                                <i class="ri-flashlight-fill"></i>
+                                <span>Описание</span>
+                            </a>
+                        </article>
+
+                        <article class="catalog__card mix byd">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="catalog__title">Yuan Plus</h1>
+
+                            <h3 class="catalog__subtitle">Byd</h3>
+
+                            <img src="./img/car/catalog/byd_yuan_plus.png" alt="" class="catalog__img">
+
+                            <div class="catalog__data">
+                                <div class="catalog__data-group">
+                                    <i class="ri-dashboard-3-line"></i> 185 км/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-route-line"></i> 610 км
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-battery-charge-line"></i> 79 кВт/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-charging-pile-2-line"></i> 10 ч
+                                </div>
+                            </div>
+
+                            <a href="#" class="catalog__button">
+                                <i class="ri-list-settings-line"></i>
+                                <span>Описание</span>
+                            </a>
+                        </article>
+
+                        <article class="catalog__card mix geely">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="catalog__title">Zeekr 001</h1>
+
+                            <h3 class="catalog__subtitle">Geely</h3>
+
+                            <img src="./img/car/catalog/zeekr_001.png" alt="" class="catalog__img">
+
+                            <div class="catalog__data">
+                                <div class="catalog__data-group">
+                                    <i class="ri-dashboard-3-line"></i> 185 км/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-route-line"></i> 610 км
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-battery-charge-line"></i> 79 кВт/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-charging-pile-2-line"></i> 10 ч
+                                </div>
+                            </div>
+
+                            <a href="#" class="catalog__button">
+                                <i class="ri-settings-4-line"></i>
+                                <span>Описание</span>
+                            </a>
+                        </article>
+
+                        <article class="catalog__card mix wm">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="catalog__title">WM EX-5</h1>
+
+                            <h3 class="catalog__subtitle">Weltmeister</h3>
+
+                            <img src="./img/car/catalog/wm-ex-5.png" alt="" class="catalog__img">
+
+                            <div class="catalog__data">
+                                <div class="catalog__data-group">
+                                    <i class="ri-dashboard-3-line"></i> 185 км/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-route-line"></i> 610 км
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-battery-charge-line"></i> 79 кВт/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-charging-pile-2-line"></i> 10 ч
+                                </div>
+                            </div>
+
+                            <a href="#" class="catalog__button">
+                                <i class="ri-information-line"></i>
+                                <span>Описание</span>
+                            </a>
+                        </article>
+
+                        <!--==================== FOR EXAMPLE ====================-->
+                        <article class="catalog__card mix byd">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="catalog__title">Han EV</h1>
+
+                            <h3 class="catalog__subtitle">Byd</h3>
+
+                            <img src="./img/car/catalog/byd_han_ev.png" alt="" class="catalog__img">
+
+                            <div class="catalog__data">
+                                <div class="catalog__data-group">
+                                    <i class="ri-dashboard-3-line"></i> 185 км/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-route-line"></i> 610 км
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-battery-charge-line"></i> 79 кВт/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-charging-pile-2-line"></i> 10 ч
+                                </div>
+                            </div>
+
+                            <a href="#" class="catalog__button">
+                                <i class="ri-add-circle-line"></i>
+                                <span>Описание</span>
+                            </a>
+                        </article>
+
+                        <article class="catalog__card mix byd">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="catalog__title">Song Plus</h1>
+
+                            <h3 class="catalog__subtitle">Byd</h3>
+
+                            <img src="./img/car/catalog/byd_song_plus.png" alt="" class="catalog__img">
+
+                            <div class="catalog__data">
+                                <div class="catalog__data-group">
+                                    <i class="ri-dashboard-3-line"></i> 185 км/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-route-line"></i> 610 км
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-battery-charge-line"></i> 79 кВт/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-charging-pile-2-line"></i> 10 ч
+                                </div>
+                            </div>
+
+                            <a href="#" class="catalog__button">
+                                <i class="ri-flashlight-fill"></i>
+                                <span>Описание</span>
+                            </a>
+                        </article>
+
+                        <article class="catalog__card mix byd">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="catalog__title">Yuan Plus</h1>
+
+                            <h3 class="catalog__subtitle">Byd</h3>
+
+                            <img src="./img/car/catalog/byd_yuan_plus.png" alt="" class="catalog__img">
+
+                            <div class="catalog__data">
+                                <div class="catalog__data-group">
+                                    <i class="ri-dashboard-3-line"></i> 185 км/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-route-line"></i> 610 км
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-battery-charge-line"></i> 79 кВт/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-charging-pile-2-line"></i> 10 ч
+                                </div>
+                            </div>
+
+                            <a href="#" class="catalog__button">
+                                <i class="ri-list-settings-line"></i>
+                                <span>Описание</span>
+                            </a>
+                        </article>
+
+                        <article class="catalog__card mix geely">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="catalog__title">Zeekr 001</h1>
+
+                            <h3 class="catalog__subtitle">Geely</h3>
+
+                            <img src="./img/car/catalog/zeekr_001.png" alt="" class="catalog__img">
+
+                            <div class="catalog__data">
+                                <div class="catalog__data-group">
+                                    <i class="ri-dashboard-3-line"></i> 185 км/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-route-line"></i> 610 км
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-battery-charge-line"></i> 79 кВт/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-charging-pile-2-line"></i> 10 ч
+                                </div>
+                            </div>
+
+                            <a href="#" class="catalog__button">
+                                <i class="ri-settings-4-line"></i>
+                                <span>Описание</span>
+                            </a>
+                        </article>
+
+                        <article class="catalog__card mix wm">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="catalog__title">WM EX-5</h1>
+
+                            <h3 class="catalog__subtitle">Weltmeister</h3>
+
+                            <img src="./img/car/catalog/wm-ex-5.png" alt="" class="catalog__img">
+
+                            <div class="catalog__data">
+                                <div class="catalog__data-group">
+                                    <i class="ri-dashboard-3-line"></i> 185 км/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-route-line"></i> 610 км
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-battery-charge-line"></i> 79 кВт/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-charging-pile-2-line"></i> 10 ч
+                                </div>
+                            </div>
+
+                            <a href="#" class="catalog__button">
+                                <i class="ri-information-line"></i>
+                                <span>Описание</span>
+                            </a>
+                        </article>
+                        <article class="catalog__card mix byd">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="catalog__title">Han EV</h1>
+
+                            <h3 class="catalog__subtitle">Byd</h3>
+
+                            <img src="./img/car/catalog/byd_han_ev.png" alt="" class="catalog__img">
+
+                            <div class="catalog__data">
+                                <div class="catalog__data-group">
+                                    <i class="ri-dashboard-3-line"></i> 185 км/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-route-line"></i> 610 км
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-battery-charge-line"></i> 79 кВт/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-charging-pile-2-line"></i> 10 ч
+                                </div>
+                            </div>
+
+                            <a href="#" class="catalog__button">
+                                <i class="ri-add-circle-line"></i>
+                                <span>Описание</span>
+                            </a>
+                        </article>
+
+                        <article class="catalog__card mix byd">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="catalog__title">Song Plus</h1>
+
+                            <h3 class="catalog__subtitle">Byd</h3>
+
+                            <img src="./img/car/catalog/byd_song_plus.png" alt="" class="catalog__img">
+
+                            <div class="catalog__data">
+                                <div class="catalog__data-group">
+                                    <i class="ri-dashboard-3-line"></i> 185 км/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-route-line"></i> 610 км
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-battery-charge-line"></i> 79 кВт/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-charging-pile-2-line"></i> 10 ч
+                                </div>
+                            </div>
+
+                            <a href="#" class="catalog__button">
+                                <i class="ri-flashlight-fill"></i>
+                                <span>Описание</span>
+                            </a>
+                        </article>
+
+                        <article class="catalog__card mix byd">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="catalog__title">Yuan Plus</h1>
+
+                            <h3 class="catalog__subtitle">Byd</h3>
+
+                            <img src="./img/car/catalog/byd_yuan_plus.png" alt="" class="catalog__img">
+
+                            <div class="catalog__data">
+                                <div class="catalog__data-group">
+                                    <i class="ri-dashboard-3-line"></i> 185 км/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-route-line"></i> 610 км
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-battery-charge-line"></i> 79 кВт/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-charging-pile-2-line"></i> 10 ч
+                                </div>
+                            </div>
+
+                            <a href="#" class="catalog__button">
+                                <i class="ri-list-settings-line"></i>
+                                <span>Описание</span>
+                            </a>
+                        </article>
+
+                        <article class="catalog__card mix geely">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="catalog__title">Zeekr 001</h1>
+
+                            <h3 class="catalog__subtitle">Geely</h3>
+
+                            <img src="./img/car/catalog/zeekr_001.png" alt="" class="catalog__img">
+
+                            <div class="catalog__data">
+                                <div class="catalog__data-group">
+                                    <i class="ri-dashboard-3-line"></i> 185 км/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-route-line"></i> 610 км
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-battery-charge-line"></i> 79 кВт/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-charging-pile-2-line"></i> 10 ч
+                                </div>
+                            </div>
+
+                            <a href="#" class="catalog__button">
+                                <i class="ri-settings-4-line"></i>
+                                <span>Описание</span>
+                            </a>
+                        </article>
+
+                        <article class="catalog__card mix wm">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="catalog__title">WM EX-5</h1>
+
+                            <h3 class="catalog__subtitle">Weltmeister</h3>
+
+                            <img src="./img/car/catalog/wm-ex-5.png" alt="" class="catalog__img">
+
+                            <div class="catalog__data">
+                                <div class="catalog__data-group">
+                                    <i class="ri-dashboard-3-line"></i> 185 км/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-route-line"></i> 610 км
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-battery-charge-line"></i> 79 кВт/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-charging-pile-2-line"></i> 10 ч
+                                </div>
+                            </div>
+
+                            <a href="#" class="catalog__button">
+                                <i class="ri-information-line"></i>
+                                <span>Описание</span>
+                            </a>
+                        </article>
+
+                        <article class="catalog__card mix byd">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="catalog__title">Han EV</h1>
+
+                            <h3 class="catalog__subtitle">Byd</h3>
+
+                            <img src="./img/car/catalog/byd_han_ev.png" alt="" class="catalog__img">
+
+                            <div class="catalog__data">
+                                <div class="catalog__data-group">
+                                    <i class="ri-dashboard-3-line"></i> 185 км/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-route-line"></i> 610 км
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-battery-charge-line"></i> 79 кВт/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-charging-pile-2-line"></i> 10 ч
+                                </div>
+                            </div>
+
+                            <a href="#" class="catalog__button">
+                                <i class="ri-add-circle-line"></i>
+                                <span>Описание</span>
+                            </a>
+                        </article>
+
+                        <article class="catalog__card mix byd">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="catalog__title">Song Plus</h1>
+
+                            <h3 class="catalog__subtitle">Byd</h3>
+
+                            <img src="./img/car/catalog/byd_song_plus.png" alt="" class="catalog__img">
+
+                            <div class="catalog__data">
+                                <div class="catalog__data-group">
+                                    <i class="ri-dashboard-3-line"></i> 185 км/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-route-line"></i> 610 км
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-battery-charge-line"></i> 79 кВт/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-charging-pile-2-line"></i> 10 ч
+                                </div>
+                            </div>
+
+                            <a href="#" class="catalog__button">
+                                <i class="ri-flashlight-fill"></i>
+                                <span>Описание</span>
+                            </a>
+                        </article>
+
+                        <article class="catalog__card mix byd">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="catalog__title">Yuan Plus</h1>
+
+                            <h3 class="catalog__subtitle">Byd</h3>
+
+                            <img src="./img/car/catalog/byd_yuan_plus.png" alt="" class="catalog__img">
+
+                            <div class="catalog__data">
+                                <div class="catalog__data-group">
+                                    <i class="ri-dashboard-3-line"></i> 185 км/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-route-line"></i> 610 км
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-battery-charge-line"></i> 79 кВт/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-charging-pile-2-line"></i> 10 ч
+                                </div>
+                            </div>
+
+                            <a href="#" class="catalog__button">
+                                <i class="ri-list-settings-line"></i>
+                                <span>Описание</span>
+                            </a>
+                        </article>
+
+                        <article class="catalog__card mix geely">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="catalog__title">Zeekr 001</h1>
+
+                            <h3 class="catalog__subtitle">Geely</h3>
+
+                            <img src="./img/car/catalog/zeekr_001.png" alt="" class="catalog__img">
+
+                            <div class="catalog__data">
+                                <div class="catalog__data-group">
+                                    <i class="ri-dashboard-3-line"></i> 185 км/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-route-line"></i> 610 км
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-battery-charge-line"></i> 79 кВт/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-charging-pile-2-line"></i> 10 ч
+                                </div>
+                            </div>
+
+                            <a href="#" class="catalog__button">
+                                <i class="ri-settings-4-line"></i>
+                                <span>Описание</span>
+                            </a>
+                        </article>
+
+                        <article class="catalog__card mix wm">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="catalog__title">WM EX-5</h1>
+
+                            <h3 class="catalog__subtitle">Weltmeister</h3>
+
+                            <img src="./img/car/catalog/wm-ex-5.png" alt="" class="catalog__img">
+
+                            <div class="catalog__data">
+                                <div class="catalog__data-group">
+                                    <i class="ri-dashboard-3-line"></i> 185 км/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-route-line"></i> 610 км
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-battery-charge-line"></i> 79 кВт/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-charging-pile-2-line"></i> 10 ч
+                                </div>
+                            </div>
+
+                            <a href="#" class="catalog__button">
+                                <i class="ri-information-line"></i>
+                                <span>Описание</span>
+                            </a>
+                        </article>
+
+                        <article class="catalog__card mix byd">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="catalog__title">Han EV</h1>
+
+                            <h3 class="catalog__subtitle">Byd</h3>
+
+                            <img src="./img/car/catalog/byd_han_ev.png" alt="" class="catalog__img">
+
+                            <div class="catalog__data">
+                                <div class="catalog__data-group">
+                                    <i class="ri-dashboard-3-line"></i> 185 км/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-route-line"></i> 610 км
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-battery-charge-line"></i> 79 кВт/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-charging-pile-2-line"></i> 10 ч
+                                </div>
+                            </div>
+
+                            <a href="#" class="catalog__button">
+                                <i class="ri-add-circle-line"></i>
+                                <span>Описание</span>
+                            </a>
+                        </article>
+
+                        <article class="catalog__card mix byd">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="catalog__title">Song Plus</h1>
+
+                            <h3 class="catalog__subtitle">Byd</h3>
+
+                            <img src="./img/car/catalog/byd_song_plus.png" alt="" class="catalog__img">
+
+                            <div class="catalog__data">
+                                <div class="catalog__data-group">
+                                    <i class="ri-dashboard-3-line"></i> 185 км/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-route-line"></i> 610 км
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-battery-charge-line"></i> 79 кВт/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-charging-pile-2-line"></i> 10 ч
+                                </div>
+                            </div>
+
+                            <a href="#" class="catalog__button">
+                                <i class="ri-flashlight-fill"></i>
+                                <span>Описание</span>
+                            </a>
+                        </article>
+
+                        <article class="catalog__card mix byd">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="catalog__title">Yuan Plus</h1>
+
+                            <h3 class="catalog__subtitle">Byd</h3>
+
+                            <img src="./img/car/catalog/byd_yuan_plus.png" alt="" class="catalog__img">
+
+                            <div class="catalog__data">
+                                <div class="catalog__data-group">
+                                    <i class="ri-dashboard-3-line"></i> 185 км/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-route-line"></i> 610 км
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-battery-charge-line"></i> 79 кВт/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-charging-pile-2-line"></i> 10 ч
+                                </div>
+                            </div>
+
+                            <a href="#" class="catalog__button">
+                                <i class="ri-list-settings-line"></i>
+                                <span>Описание</span>
+                            </a>
+                        </article>
+
+                        <article class="catalog__card mix geely">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="catalog__title">Zeekr 001</h1>
+
+                            <h3 class="catalog__subtitle">Geely</h3>
+
+                            <img src="./img/car/catalog/zeekr_001.png" alt="" class="catalog__img">
+
+                            <div class="catalog__data">
+                                <div class="catalog__data-group">
+                                    <i class="ri-dashboard-3-line"></i> 185 км/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-route-line"></i> 610 км
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-battery-charge-line"></i> 79 кВт/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-charging-pile-2-line"></i> 10 ч
+                                </div>
+                            </div>
+
+                            <a href="#" class="catalog__button">
+                                <i class="ri-settings-4-line"></i>
+                                <span>Описание</span>
+                            </a>
+                        </article>
+
+                        <article class="catalog__card mix wm">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="catalog__title">WM EX-5</h1>
+
+                            <h3 class="catalog__subtitle">Weltmeister</h3>
+
+                            <img src="./img/car/catalog/wm-ex-5.png" alt="" class="catalog__img">
+
+                            <div class="catalog__data">
+                                <div class="catalog__data-group">
+                                    <i class="ri-dashboard-3-line"></i> 185 км/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-route-line"></i> 610 км
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-battery-charge-line"></i> 79 кВт/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-charging-pile-2-line"></i> 10 ч
+                                </div>
+                            </div>
+
+                            <a href="#" class="catalog__button">
+                                <i class="ri-information-line"></i>
+                                <span>Описание</span>
+                            </a>
+                        </article>
+
+                        <article class="catalog__card mix byd">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="catalog__title">Han EV</h1>
+
+                            <h3 class="catalog__subtitle">Byd</h3>
+
+                            <img src="./img/car/catalog/byd_han_ev.png" alt="" class="catalog__img">
+
+                            <div class="catalog__data">
+                                <div class="catalog__data-group">
+                                    <i class="ri-dashboard-3-line"></i> 185 км/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-route-line"></i> 610 км
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-battery-charge-line"></i> 79 кВт/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-charging-pile-2-line"></i> 10 ч
+                                </div>
+                            </div>
+
+                            <a href="#" class="catalog__button">
+                                <i class="ri-add-circle-line"></i>
+                                <span>Описание</span>
+                            </a>
+                        </article>
+
+                        <article class="catalog__card mix byd">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="catalog__title">Song Plus</h1>
+
+                            <h3 class="catalog__subtitle">Byd</h3>
+
+                            <img src="./img/car/catalog/byd_song_plus.png" alt="" class="catalog__img">
+
+                            <div class="catalog__data">
+                                <div class="catalog__data-group">
+                                    <i class="ri-dashboard-3-line"></i> 185 км/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-route-line"></i> 610 км
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-battery-charge-line"></i> 79 кВт/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-charging-pile-2-line"></i> 10 ч
+                                </div>
+                            </div>
+
+                            <a href="#" class="catalog__button">
+                                <i class="ri-flashlight-fill"></i>
+                                <span>Описание</span>
+                            </a>
+                        </article>
+
+                        <article class="catalog__card mix byd">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="catalog__title">Yuan Plus</h1>
+
+                            <h3 class="catalog__subtitle">Byd</h3>
+
+                            <img src="./img/car/catalog/byd_yuan_plus.png" alt="" class="catalog__img">
+
+                            <div class="catalog__data">
+                                <div class="catalog__data-group">
+                                    <i class="ri-dashboard-3-line"></i> 185 км/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-route-line"></i> 610 км
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-battery-charge-line"></i> 79 кВт/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-charging-pile-2-line"></i> 10 ч
+                                </div>
+                            </div>
+
+                            <a href="#" class="catalog__button">
+                                <i class="ri-list-settings-line"></i>
+                                <span>Описание</span>
+                            </a>
+                        </article>
+
+                        <article class="catalog__card mix geely">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="catalog__title">Zeekr 001</h1>
+
+                            <h3 class="catalog__subtitle">Geely</h3>
+
+                            <img src="./img/car/catalog/zeekr_001.png" alt="" class="catalog__img">
+
+                            <div class="catalog__data">
+                                <div class="catalog__data-group">
+                                    <i class="ri-dashboard-3-line"></i> 185 км/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-route-line"></i> 610 км
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-battery-charge-line"></i> 79 кВт/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-charging-pile-2-line"></i> 10 ч
+                                </div>
+                            </div>
+
+                            <a href="#" class="catalog__button">
+                                <i class="ri-settings-4-line"></i>
+                                <span>Описание</span>
+                            </a>
+                        </article>
+
+                        <article class="catalog__card mix wm">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="catalog__title">WM EX-5</h1>
+
+                            <h3 class="catalog__subtitle">Weltmeister</h3>
+
+                            <img src="./img/car/catalog/wm-ex-5.png" alt="" class="catalog__img">
+
+                            <div class="catalog__data">
+                                <div class="catalog__data-group">
+                                    <i class="ri-dashboard-3-line"></i> 185 км/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-route-line"></i> 610 км
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-battery-charge-line"></i> 79 кВт/ч
+                                </div>
+                                <div class="catalog__data-group">
+                                    <i class="ri-charging-pile-2-line"></i> 10 ч
+                                </div>
+                            </div>
+
+                            <a href="#" class="catalog__button">
+                                <i class="ri-information-line"></i>
+                                <span>Описание</span>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== COMPARE ====================-->
+            <section class="compare section">
+                <div class="compare__container container grid">
+                    <img src="./img/offer-bg.png" alt="" class="compare__bg">
+
+                    <div class="compare__data">
+                        <h2 class="section__title compare__title">
+                            Сравнить Модели
+                        </h2>
+
+                        <p class="compare__description">
+                            Не знаете какой электромобиль выбрать? Сравните характеристики различных моделей и марок. 
+                        </p>
+
+                        <a href="#" class="button">
+                            Сравнить
+                        </a>
+                    </div>
+
+                    <img src="./img/offer.png" alt="" class="compare__img">
+                </div>
+            </section>
+
+            <!--==================== CREDIT ====================-->
+            <section class="credit section">
+                <h2 class="section__title">
+                    Автокредитование
+                </h2>
+                
+                <div class="credit__container container grid">
+                    <div class="credit__card">
+                        <div class="credit__card-logo">
+                            <img src="./img/bank/kkb.png" alt="kkb logo">
+                        </div>
+
+                        <h3 class="credit__card-title">
+                            Взнос 30%
+                        </h3>
+
+                        <ul class="credit__card-description">
+                            <li>
+                                Годой % = 20%
+                            </li>
+                            <li>
+                                Рассрочка 1-3 лет
+                            </li>
+                            <li>
+                                Обслуживание 1%
+                            </li>
+                            <li>
+                                Залог - авто
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="credit__card">
+                        <div class="credit__card-logo">
+                            <img src="./img/bank/ab.png" alt="ab logo">
+                        </div>
+
+                        <h3 class="credit__card-title">
+                            Взнос 10%-30%
+                        </h3>
+
+                        <ul class="credit__card-description">
+                            <li>
+                                Годой % = 20%
+                            </li>
+                            <li>
+                                Рассрочка 3-5 лет
+                            </li>
+                            <li>
+                                Обслуживание 1%
+                            </li>
+                            <li>
+                                Залог - авто
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="credit__card">
+                        <div class="credit__card-logo">
+                            <img src="./img/bank/dcb.png" alt="dcb logo">
+                        </div>
+                        
+                        <h3 class="credit__card-title">
+                            Взнос 10%-30%
+                        </h3>
+
+                        <ul class="credit__card-description">
+                            <li>
+                                Годой % = 20%
+                            </li>
+                            <li>
+                                Рассрочка 3-5 лет
+                            </li>
+                            <li>
+                                Обслуживание 1%
+                            </li>
+                            <li>
+                                Залог - авто
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="credit__card">
+                        <div class="credit__card-logo">
+                            <img src="./img/bank/cbk.png" alt="cbk logo">
+                        </div>
+                        
+                        <h3 class="credit__card-title">
+                            Взнос 10%-20%
+                        </h3>
+
+                        <ul class="credit__card-description">
+                            <li>
+                                Годой % = 20%
+                            </li>
+                            <li>
+                                Рассрочка 3-5 лет
+                            </li>
+                            <li>
+                                Обслуживание 1%
+                            </li>
+                            <li>
+                                Залог - авто
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="credit__card">
+                        <div class="credit__card-logo">
+                            <img src="./img/bank/btb.png" alt="btb logo">
+                        </div>
+                        
+                        <h3 class="credit__card-title">
+                            Взнос 20%
+                        </h3>
+
+                        <ul class="credit__card-description">
+                            <li>
+                                Годой % = 15%-20%
+                            </li>
+                            <li>
+                                Рассрочка 1-3 лет
+                            </li>
+                            <li>
+                                Обслуживание 1%
+                            </li>
+                            <li>
+                                Залог - авто
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ORDER/SUBMIT ====================-->
+            <section class="order section">
+                <div class="order__container container grid">
+                    <img src="./img/offer-bg.png" alt="" class="order__bg">
+
+                    <div class="order__data">
+                        <h2 class="section__title order__title">
+                            Подать Заявку
+                        </h2>
+
+                        <p class="order__description">
+                            Напишите нам и мы поможем подобрать оптимальный для Вас вариант электромобиля и условий оплаты.
+                        </p>
+
+                        <a href="#" class="button">
+                            Подать заявку
+                        </a>
+                    </div>
+
+                    <img src="./img/car/home/byd_yuan_plus.png" alt="" class="order__img">
+                </div>
+            </section>
+
+            <!--==================== ARTICLES/NEWS ====================-->
+            <section class="news section" id="news">
+                <h2 class="section__title news__title">
+                    Новости
+                </h2>
+
+                <div class="news__container container grid">
+                    <div class="news__group">
+                        <img src="./img/news.jpg" alt="" class="news__img">
+
+                        <div class="news__card">
+                            <h3 class="news__card-title">2.500+</h3>
+                            <p class="news__card-description">
                                 Supercharges placed along popular routes
                             </p>
                         </div>
                     </div>
 
-                    <div class="about__data">
-                        <h2 class="section__title about__title">
-                            Machines With <br> Future Technology
-                        </h2>
+                    <div class="news__data">
+                        <h3 class="news__data-title">
+                            Успей заказть
+                        </h3>
 
-                        <p class="about__description">
+                        <p class="news__description">
+                            See the future with high-performance electric cars produced by 
+                            renowned brands. They feature futuristic builds and designs with 
+                            new and innovative platforms that last a long time.
+                        </p>
+
+                        <a href="#" class="button">Читать</a>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== CHARGE STATION's MAP ====================-->
+            <section class="map section" id="map">
+                <h2 class="section__title">
+                    Зарядные станции г. Бишкек
+                </h2>
+
+                <div class="map__container container grid">
+                    <div class="map__group">
+                        <img src="./img/features.png" alt="" class="map__img">
+
+                        <div class="map__card map__card-1">
+                            <h3 class="map__card-title">800v</h3>
+                            <p class="map__card-description">Turbo <br> Chargin</p>
+                        </div>
+
+                        <div class="map__card map__card-2">
+                            <h3 class="map__card-title">350</h3>
+                            <p class="map__card-description">Km <br> Range</p>
+                        </div>
+
+                        <div class="map__card map__card-3">
+                            <h3 class="map__card-title">480</h3>
+                            <p class="map__card-description">Km <br> Travel</p>
+                        </div>
+                    </div>
+                </div>
+
+                <img src="./img/map.svg" alt="" class="map__bg">
+            </section>
+
+            <!--==================== CHARGES ====================-->
+            <section class="charges section">
+                <h2 class="section__title">
+                    Зарядные устройства и Станции <br> в наличие и на заказ
+                    <!-- Choose Your Electric Car <br> Of The Porsche Brand -->
+                </h2>
+
+                <div class="charges__container container swiper">
+                    <div class="swiper-wrapper">
+                        <article class="charges__card swiper-slide">
+                            <div class="shape shape__smaller"></div>
+
+                            <!-- <h1 class="charges__title">Porsche</h1>
+                            <h3 class="charges__subtitle">Turbo S</h3> -->
+
+                            <img src="./img/charges/tesla.png" alt="" class="charges__img">
+
+                            <a href="#" class="charges__button">
+                                <i class="ri-charging-pile-2-line"></i>
+                                <span>Описание</span>
+                            </a>
+                        </article>
+
+                        <article class="charges__card swiper-slide">
+                            <div class="shape shape__smaller"></div>
+
+                            <!-- <h1 class="charges__title">Porsche</h1>
+                            <h3 class="charges__subtitle">Taycan</h3> -->
+
+                            <img src="./img/charges/bmw.png" alt="" class="charges__img">
+
+                            <a href="#" class="charges__button">
+                                <i class="ri-flashlight-fill"></i>
+                                <span>Описание</span>
+                            </a>
+                        </article>
+
+                        <!-- <article class="charges__card swiper-slide">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="charges__title">Porsche</h1>
+                            <h3 class="charges__subtitle">Turbo S Cross</h3>
+
+                            <img src="./img/charges/rozetka.png" alt="" class="charges__img">
+
+                            <a href="#" class="charges__button">
+                                <i class="ri-charging-pile-2-line"></i>
+                                <span>Описание</span>
+                            </a>
+                        </article> -->
+
+                        <!-- <article class="charges__card swiper-slide">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="charges__title">Porsche</h1>
+                            <h3 class="charges__subtitle">Boxster 718</h3>
+
+                            <img src="./img/charges/charge-st1.png" alt="" class="charges__img">
+
+                            <a href="#" class="charges__button">
+                                <i class="ri-flashlight-fill"></i>
+                                <span>Описание</span>
+                            </a>
+                        </article> -->
+
+                        <!-- <article class="charges__card swiper-slide">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="charges__title">Porsche</h1>
+                            <h3 class="charges__subtitle">Cayman</h3>
+
+                            <img src="./img/charges/charge-st2.png" alt="" class="charges__img">
+
+                            <a href="#" class="charges__button">
+                                <i class="ri-charging-pile-2-line"></i>
+                                <span>Описание</span>
+                            </a>
+                        </article> -->
+
+                        <article class="charges__card swiper-slide">
+                            <div class="shape shape__smaller"></div>
+
+                            <!-- <h1 class="charges__title">Porsche</h1>
+                            <h3 class="charges__subtitle">Turbo S</h3> -->
+
+                            <img src="./img/charges/tesla.png" alt="" class="charges__img">
+
+                            <a href="#" class="charges__button">
+                                <i class="ri-charging-pile-2-line"></i>
+                                <span>Описание</span>
+                            </a>
+                        </article>
+
+                        <article class="charges__card swiper-slide">
+                            <div class="shape shape__smaller"></div>
+
+                            <!-- <h1 class="charges__title">Porsche</h1>
+                            <h3 class="charges__subtitle">Taycan</h3> -->
+
+                            <img src="./img/charges/bmw.png" alt="" class="charges__img">
+
+                            <a href="#" class="charges__button">
+                                <i class="ri-flashlight-fill"></i>
+                                <span>Описание</span>
+                            </a>
+                        </article>
+
+                        <article class="charges__card swiper-slide">
+                            <div class="shape shape__smaller"></div>
+
+                            <!-- <h1 class="charges__title">Porsche</h1>
+                            <h3 class="charges__subtitle">Turbo S</h3> -->
+
+                            <img src="./img/charges/tesla.png" alt="" class="charges__img">
+
+                            <a href="#" class="charges__button">
+                                <i class="ri-charging-pile-2-line"></i>
+                                <span>Описание</span>
+                            </a>
+                        </article>
+
+                        <article class="charges__card swiper-slide">
+                            <div class="shape shape__smaller"></div>
+
+                            <!-- <h1 class="charges__title">Porsche</h1>
+                            <h3 class="charges__subtitle">Taycan</h3> -->
+
+                            <img src="./img/charges/bmw.png" alt="" class="charges__img">
+
+                            <a href="#" class="charges__button">
+                                <i class="ri-flashlight-fill"></i>
+                                <span>Описание</span>
+                            </a>
+                        </article>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+            <!--==================== FAQ ====================-->
+            <section class="faq section">
+                <h2 class="section__title faq__title">
+                    FAQ
+                </h2>
+
+                <div class="faq__container container grid">
+                    <div class="faq__group">
+                        <img src="./img/map.jpeg" alt="" class="faq__img">
+
+                        <div class="faq__card">
+                            <h3 class="faq__card-title">2.500+</h3>
+                            <p class="faq__card-description">
+                                Supercharges placed along popular routes
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq__data">
+                        <p class="faq__description">
                             See the future with high-performance electric cars produced by 
                             renowned brands. They feature futuristic builds and designs with 
                             new and innovative platforms that last a long time.
@@ -140,323 +1708,36 @@
                 </div>
             </section>
 
-            <!--==================== POPULAR ====================-->
-            <section class="popular section" id="popular">
+            <!--==================== PARTNERS ====================-->
+            <section class="partners section">
                 <h2 class="section__title">
-                    Choose Your Electric Car <br> Of The Porsche Brand
+                    Наши Партнёры
                 </h2>
 
-                <div class="popular__container container swiper">
-                    <div class="swiper-wrapper">
-                        <article class="popular__card swiper-slide">
-                            <div class="shape shape__smaller"></div>
-
-                            <h1 class="popular__title">Porsche</h1>
-                            <h3 class="popular__subtitle">Turbo S</h3>
-
-                            <img src="./img/popular1.png" alt="" class="popular__img">
-
-                            <div class="popular__data">
-                                <div class="popular__data-group">
-                                    <i class="ri-dashboard-3-line"></i> 3.7 Sec
-                                </div>
-                                <div class="popular__data-group">
-                                    <i class="ri-funds-box-line"></i> 356 Km/h
-                                </div>
-                                <div class="popular__data-group">
-                                    <i class="ri-charging-pile-2-line"></i> Electric
-                                </div>
-                            </div>
-
-                            <h3 class="popular__price">$175,900</h3>
-
-                            <button class="button popular__button">
-                                <i class="ri-shopping-bag-2-line"></i>
-                            </button>
-                        </article>
-
-                        <article class="popular__card swiper-slide">
-                            <div class="shape shape__smaller"></div>
-
-                            <h1 class="popular__title">Porsche</h1>
-                            <h3 class="popular__subtitle">Taycan</h3>
-
-                            <img src="./img/popular2.png" alt="" class="popular__img">
-
-                            <div class="popular__data">
-                                <div class="popular__data-group">
-                                    <i class="ri-dashboard-3-line"></i> 3.7 Sec
-                                </div>
-                                <div class="popular__data-group">
-                                    <i class="ri-funds-box-line"></i> 356 Km/h
-                                </div>
-                                <div class="popular__data-group">
-                                    <i class="ri-charging-pile-2-line"></i> Electric
-                                </div>
-                            </div>
-
-                            <h3 class="popular__price">$114,900</h3>
-
-                            <button class="button popular__button">
-                                <i class="ri-shopping-bag-2-line"></i>
-                            </button>
-                        </article>
-
-                        <article class="popular__card swiper-slide">
-                            <div class="shape shape__smaller"></div>
-
-                            <h1 class="popular__title">Porsche</h1>
-                            <h3 class="popular__subtitle">Turbo S Cross</h3>
-
-                            <img src="./img/popular3.png" alt="" class="popular__img">
-
-                            <div class="popular__data">
-                                <div class="popular__data-group">
-                                    <i class="ri-dashboard-3-line"></i> 3.7 Sec
-                                </div>
-                                <div class="popular__data-group">
-                                    <i class="ri-funds-box-line"></i> 356 Km/h
-                                </div>
-                                <div class="popular__data-group">
-                                    <i class="ri-charging-pile-2-line"></i> Electric
-                                </div>
-                            </div>
-
-                            <h3 class="popular__price">$150,900</h3>
-
-                            <button class="button popular__button">
-                                <i class="ri-shopping-bag-2-line"></i>
-                            </button>
-                        </article>
-
-                        <article class="popular__card swiper-slide">
-                            <div class="shape shape__smaller"></div>
-
-                            <h1 class="popular__title">Porsche</h1>
-                            <h3 class="popular__subtitle">Boxster 718</h3>
-
-                            <img src="./img/popular4.png" alt="" class="popular__img">
-
-                            <div class="popular__data">
-                                <div class="popular__data-group">
-                                    <i class="ri-dashboard-3-line"></i> 3.7 Sec
-                                </div>
-                                <div class="popular__data-group">
-                                    <i class="ri-funds-box-line"></i> 356 Km/h
-                                </div>
-                                <div class="popular__data-group">
-                                    <i class="ri-charging-pile-2-line"></i> Electric
-                                </div>
-                            </div>
-
-                            <h3 class="popular__price">$125,900</h3>
-
-                            <button class="button popular__button">
-                                <i class="ri-shopping-bag-2-line"></i>
-                            </button>
-                        </article>
-
-                        <article class="popular__card swiper-slide">
-                            <div class="shape shape__smaller"></div>
-
-                            <h1 class="popular__title">Porsche</h1>
-                            <h3 class="popular__subtitle">Cayman</h3>
-
-                            <img src="./img/popular5.png" alt="" class="popular__img">
-
-                            <div class="popular__data">
-                                <div class="popular__data-group">
-                                    <i class="ri-dashboard-3-line"></i> 3.7 Sec
-                                </div>
-                                <div class="popular__data-group">
-                                    <i class="ri-funds-box-line"></i> 356 Km/h
-                                </div>
-                                <div class="popular__data-group">
-                                    <i class="ri-charging-pile-2-line"></i> Electric
-                                </div>
-                            </div>
-
-                            <h3 class="popular__price">$128,900</h3>
-
-                            <button class="button popular__button">
-                                <i class="ri-shopping-bag-2-line"></i>
-                            </button>
-                        </article>
+                <div class="partners__container container grid">
+                    <div class="partners__content">
+                        <img src="./img/logo1.png" alt="" class="partners__img">
                     </div>
 
-                    <div class="swiper-pagination"></div>
-                </div>
-            </section>
-
-            <!--==================== FEATURES ====================-->
-            <section class="features section">
-                <h2 class="section__title">
-                    More Features
-                </h2>
-
-                <div class="features__container container grid">
-                    <div class="features__group">
-                        <img src="./img/features.png" alt="" class="features__img">
-
-                        <div class="features__card features__card-1">
-                            <h3 class="features__card-title">800v</h3>
-                            <p class="features__card-description">Turbo <br> Chargin</p>
-                        </div>
-
-                        <div class="features__card features__card-2">
-                            <h3 class="features__card-title">350</h3>
-                            <p class="features__card-description">Km <br> Range</p>
-                        </div>
-
-                        <div class="features__card features__card-3">
-                            <h3 class="features__card-title">480</h3>
-                            <p class="features__card-description">Km <br> Travel</p>
-                        </div>
-                    </div>
-                </div>
-
-                <img src="./img/map.svg" alt="" class="features__map">
-            </section>
-
-            <!--==================== FEATURED ====================-->
-            <section class="featured section" id="featured">
-                <h2 class="section__title">
-                    Featured Luxury Cars
-                </h2>
-
-                <div class="featured__container container">
-                    <ul class="featured__filters">
-                        <li>
-                            <button class="featured__item active-featured" data-filter="all">
-                                <span>All</span>
-                            </button>
-                        </li>
-
-                        <li>
-                            <button class="featured__item" data-filter=".tesla">
-                                <img src="./img/logo3.png" alt="">
-                            </button>
-                        </li>
-
-                        <li>
-                            <button class="featured__item" data-filter=".audi">
-                                <img src="./img/logo2.png" alt="">
-                            </button>
-                        </li>
-
-                        <li>
-                            <button class="featured__item" data-filter=".porsche">
-                                <img src="./img/logo1.png" alt="">
-                            </button>
-                        </li>
-                    </ul>
-
-                    <div class="featured__content grid">
-                        <article class="featured__card mix tesla">
-                            <div class="shape shape__smaller"></div>
-
-                            <h1 class="featured__title">Tesla</h1>
-
-                            <h3 class="featured__subtitle">Model X</h3>
-
-                            <img src="./img/featured1.png" alt="" class="featured__img">
-
-                            <h3 class="featured__price">$98,900</h3>
-
-                            <button class="button featured__button">
-                                <i class="ri-shopping-bag-2-line"></i>
-                            </button>
-                        </article>
-
-                        <article class="featured__card mix tesla">
-                            <div class="shape shape__smaller"></div>
-
-                            <h1 class="featured__title">Tesla</h1>
-
-                            <h3 class="featured__subtitle">Model 3</h3>
-
-                            <img src="./img/featured2.png" alt="" class="featured__img">
-
-                            <h3 class="featured__price">$45,900</h3>
-
-                            <button class="button featured__button">
-                                <i class="ri-shopping-bag-2-line"></i>
-                            </button>
-                        </article>
-
-                        <article class="featured__card mix audi">
-                            <div class="shape shape__smaller"></div>
-
-                            <h1 class="featured__title">Audi</h1>
-
-                            <h3 class="featured__subtitle">E-tron</h3>
-
-                            <img src="./img/featured3.png" alt="" class="featured__img">
-
-                            <h3 class="featured__price">$175,900</h3>
-
-                            <button class="button featured__button">
-                                <i class="ri-shopping-bag-2-line"></i>
-                            </button>
-                        </article>
-
-                        <article class="featured__card mix porsche">
-                            <div class="shape shape__smaller"></div>
-
-                            <h1 class="featured__title">Porsche</h1>
-
-                            <h3 class="featured__subtitle">Boxster 987</h3>
-
-                            <img src="./img/featured4.png" alt="" class="featured__img">
-
-                            <h3 class="featured__price">$126,900</h3>
-
-                            <button class="button featured__button">
-                                <i class="ri-shopping-bag-2-line"></i>
-                            </button>
-                        </article>
-
-                        <article class="featured__card mix porsche">
-                            <div class="shape shape__smaller"></div>
-
-                            <h1 class="featured__title">Porsche</h1>
-
-                            <h3 class="featured__subtitle">Panamera</h3>
-
-                            <img src="./img/featured5.png" alt="" class="featured__img">
-
-                            <h3 class="featured__price">$126,900</h3>
-
-                            <button class="button featured__button">
-                                <i class="ri-shopping-bag-2-line"></i>
-                            </button>
-                        </article>
-                    </div>
-                </div>
-            </section>
-
-            <!--==================== OFFER ====================-->
-            <section class="offer section">
-                <div class="offer__container container grid">
-                    <img src="./img/offer-bg.png" alt="" class="offer__bg">
-
-                    <div class="offer__data">
-                        <h2 class="section__title offer__title">
-                            Do You Want To Receive <br> Special Offers?
-                        </h2>
-
-                        <p class="offer__description">
-                            Be the first to receive all the information about our 
-                            products and new cars by email by subscribing to our 
-                            mailing list.
-                        </p>
-
-                        <a href="#" class="button">
-                            Subscribe Now
-                        </a>
+                    <div class="partners__content">
+                        <img src="./img/logo2.png" alt="" class="partners__img">
                     </div>
 
-                    <img src="./img/offer.png" alt="" class="offer__img">
+                    <div class="partners__content">
+                        <img src="./img/logo3.png" alt="" class="partners__img">
+                    </div>
+
+                    <div class="partners__content">
+                        <img src="./img/logo4.png" alt="" class="partners__img">
+                    </div>
+
+                    <div class="partners__content">
+                        <img src="./img/logo5.png" alt="" class="partners__img">
+                    </div>
+
+                    <div class="partners__content">
+                        <img src="./img/logo6.png" alt="" class="partners__img">
+                    </div>
                 </div>
             </section>
 
@@ -498,80 +1779,142 @@
             <div class="footer__container container grid">
                 <div class="footer__content">
                     <a href="#" class="footer__logo">
-                        <i class="ri-steering-line"></i> Elecar
+                        <!-- <i class="ri-steering-line"></i> Elecar -->
+                        <img src="./img/logo.png" alt="logo">
                     </a>
                     <p class="footer__description">
-                        We offer the best electric cars of <br> 
-                        the most recognized brands in <br> 
-                        the world.
+                        Электромобили на заказ.<br>
+                        Зарядные станции, устройства<br>
+                        и прочие комплектующие.<br>
+                        Прямые поставки с<br> 
+                        заводов производителей<br>
+                        Китая, США, Южной Кореи.
                     </p>
-                </div>
+                    <!-- <p class="footer__description">
+                        Доставка и продажа<br>
+                        электромобилей из<br>
+                        Китая, США и Кореи.
+                    </p> -->
 
-                <div class="footer__content">
                     <h3 class="footer__title">
-                        Company
-                    </h3>
-
-                    <ul class="footer__links">
-                        <li>
-                            <a href="#" class="footer__link">About</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer__link">Cars</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer__link">History</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer__link">Shop</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="footer__content">
-                    <h3 class="footer__title">
-                        Information
-                    </h3>
-
-                    <ul class="footer__links">
-                        <li>
-                            <a href="#" class="footer__link">Request a quote</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer__link">Find a dealer</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer__link">Contact us</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer__link">Services</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="footer__content">
-                    <h3 class="footer__title">
-                        Follow us
+                        Социальные сети:
                     </h3>
 
                     <ul class="footer__social">
-                        <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
-                            <i class="ri-facebook-fill"></i>
+                        <a href="https://telegram.me/+996998000133" target="_blank" class="footer__social-link">
+                            <i class="ri-telegram-line"></i>
                         </a>
 
-                        <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                        <a href="https://wa.me/+996508000133" target="_blank" class="footer__social-link">
+                            <i class="ri-whatsapp-line"></i>
+                        </a>
+
+                        <a href="https://www.facebook.com/tokaraba.kg?mibextid=ZbWKwL" target="_blank" class="footer__social-link">
+                            <i class="ri-facebook-circle-line"></i>
+                        </a>
+
+                        <a href="https://www.tiktok.com/" target="_blank" class="footer__social-link">
+                            <i class="ri-tiktok-line"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/tokaraba.kg/" target="_blank" class="footer__social-link">
                             <i class="ri-instagram-line"></i>
                         </a>
 
-                        <a href="https://twitter.com/" target="_blank" class="footer__social-link">
-                            <i class="ri-twitter-line"></i>
+                        <a href="https://www.youtube.com/channel/UC_tfyiBPiazGE0xQbuc0uTQ" target="_blank" class="footer__social-link">
+                            <i class="ri-youtube-line"></i>
                         </a>
                     </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        Пользователям:
+                    </h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">О нас</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Наши партнёры</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Сотрудничество</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Пользовательское <br>соглашение</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Политика <br>конфиденциальности</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        Полезные ссылки:
+                    </h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Программное обеспичение</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Карта зарядных станций <br>г. Бишкек</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Автокредитование</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Сравнить модели</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title contacts">
+                        Наши контакты:
+                    </h3>
+
+                    <ul class="footer__links contacts">
+                        <li>
+                            <a href="https://telegram.me/+996998000133" class="footer__link">
+                                <i class="ri-phone-fill"></i>
+                                <i class="ri-telegram-line"></i>
+                                <i class="ri-whatsapp-line"></i>
+                                +996 998 000 133
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/+996508000133" class="footer__link">
+                                <i class="ri-phone-fill"></i>
+                                <i class="ri-telegram-line"></i>
+                                <i class="ri-whatsapp-line"></i>
+                                +996 508 000 133
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@tokaraba.com" class="footer__link">
+                                <i class="ri-mail-send-line"></i>
+                                info@tokaraba.com
+                            </a>
+                        </li>
+                    </ul>
+
+                    <h3 class="footer__title address">
+                        Адрес:
+                    </h3>
+
+                    <a href="https://2gis.kg/bishkek/geo/15763234351167466/74.578505%2C42.877544?m=74.579468%2C42.877044%2F17.52" class="footer__link">
+                        <i class="ri-map-pin-line"></i>
+                        Кыргызстан, г. Бишкек, <br>пр. Чуй 267, каб. 133
+                    </a>
                 </div>
             </div>
 
             <span class="footer__copy">
-                &#169; Bedimcode. All rigths reserved
+                &#169; <a href="#" class="footer__copy-link">TOKARABA</a> 2023. Все права защищены.
             </span>
         </footer>
 
