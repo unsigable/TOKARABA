@@ -505,7 +505,7 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: multiply;
-  background-color: rgba(1, 13, 54, 0.561);
+  background-color: rgba(0, 0, 0, 0.561);
 }
 
 /* .about__img {
@@ -513,6 +513,118 @@ img {
   opacity: .4;
   transition: .3s;
 } */
+
+.about__container {
+  grid-template-columns: 230px;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  padding-bottom: 1rem;
+
+  margin-top: 7rem;
+}
+
+.about__card {
+  width: 90%;
+  height: 250px;
+  position: relative;
+  background-color: #0a0a0b87;
+  padding: 1.5rem;
+  border: 2px solid var(--first-color);
+  border-radius: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.about__card-img i {
+  font-size: 3rem;
+}
+
+.about__number {
+  position: absolute;
+  top: -2.7rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  border: 2px solid var(--first-color);
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  background: var(--body-color);
+
+  animation: button 3s infinite;
+  box-shadow: 0 0 12px var(--first-color);
+  transition: .3s;
+}
+
+.about__button {
+  /* position: relative; */
+  /* border: 2px solid hsl(158, 89%, 30%); */
+  width: 50px;
+  height: 50px;
+  border: 2px solid var(--first-color);
+  border-radius: 50%;
+  font-size: 1.8rem;
+  color: var(--white-color);
+  font-weight: var(--font-medium);
+
+  outline: none;
+  background: var(--body-color);
+}
+
+/*=============== ABOUT-2 ===============*/
+.about-2 {
+  /* background-image: url(../img/2cars.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply; */
+  background-color: rgba(0, 0, 0, 0.561);
+}
+
+.about__number-2 {
+  /* display: none; */
+  font-size: 3rem;
+}
+
+/* .about__img {
+  width: 40px;
+  opacity: .4;
+  transition: .3s;
+} */
+
+.about__card-2 {
+  width: 90%;
+  height: 250px;
+  position: relative;
+  background-color: #0a0a0b87;
+  padding: 2rem 1.5rem;
+  border: 2px solid var(--first-color);
+  border-radius: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.about__card-text-2 {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.about__card-desc-2 {
+  font-size: 0.9rem;
+}
 
 .about__container {
   grid-template-columns: 230px;
