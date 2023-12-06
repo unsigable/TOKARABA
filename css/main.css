@@ -499,22 +499,85 @@ img {
 }
 
 /*=============== ABOUT ===============*/
-.about__img {
+.about {
+  background-image: url(../img/2cars.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  background-color: rgba(1, 13, 54, 0.561);
+}
+
+/* .about__img {
   width: 40px;
   opacity: .4;
   transition: .3s;
-}
+} */
 
 .about__container {
-  grid-template-columns: repeat(3, max-content);
+  grid-template-columns: 230px;
   justify-content: center;
   align-items: center;
-  gap: 4rem;
-  padding-bottom: 2rem;
+  gap: 5rem;
+  padding-bottom: 1rem;
+
+  margin-top: 7rem;
 }
 
-.about__img:hover {
-  opacity: 1;
+.about__card {
+  width: 90%;
+  height: 250px;
+  position: relative;
+  background-color: #0a0a0b87;
+  padding: 1.5rem;
+  border: 2px solid var(--first-color);
+  border-radius: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.about__card-img i {
+  font-size: 3rem;
+}
+
+.about__number {
+  position: absolute;
+  top: -2.7rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  border: 2px solid var(--first-color);
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  background: var(--body-color);
+
+  animation: button 3s infinite;
+  box-shadow: 0 0 12px var(--first-color);
+  transition: .3s;
+}
+
+.about__button {
+  /* position: relative; */
+  /* border: 2px solid hsl(158, 89%, 30%); */
+  width: 50px;
+  height: 50px;
+  border: 2px solid var(--first-color);
+  border-radius: 50%;
+  font-size: 1.8rem;
+  color: var(--white-color);
+  font-weight: var(--font-medium);
+
+  outline: none;
+  background: var(--body-color);
 }
 
 /*=============== ADVENTAGES ===============*/
@@ -538,6 +601,7 @@ img {
 
 /*=============== CATALOG ===============*/
 .catalog__container {
+  max-width: 80%;
   padding-top: 1rem;
 }
 
@@ -1290,6 +1354,12 @@ img {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
+@media screen and (min-width: 320px) {
+  .section__title {
+    font-size: 2rem;
+  }
+}
+
 @media screen and (max-width: 320px) {
   .container {
     margin-left: 1rem;
@@ -1300,9 +1370,9 @@ img {
     column-gap: 1.7rem;
   }
 
-  .about__container {
+  /* .about__container {
     gap: 2.5rem;
-  }
+  } */
 
   .adv__container {
     gap: 2.5rem;
@@ -1344,7 +1414,7 @@ img {
 }
 
 /* For medium devices */
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 576px) {  
   .nav__logo {
     width: 6.5rem;
   }
@@ -1360,6 +1430,11 @@ img {
   .home__car-number {
     font-size: 1rem;
     margin-bottom: .5rem;
+  }
+
+  .about__container {
+    grid-template-columns: repeat(2, 240px);
+    gap: 3.5rem 5.5rem;
   }
   
   .catalog__content {
@@ -1448,9 +1523,10 @@ img {
     padding-top: 5rem;
   }
 
-  .about__container {
-    gap: 4rem 8rem;
-  }
+  /* .about__container {
+    grid-template-columns: repeat(3, 240px);
+    gap: 3.5rem 5.5rem;
+  } */
 
   .adv__container {
     gap: 4rem 8rem;
@@ -1516,11 +1592,12 @@ img {
   }
 
   .about__container {
-    grid-template-columns: repeat(6, max-content);
+    grid-template-columns: repeat(4, 245px);
+    column-gap: 1.2rem;
   }
-  .about__img {
+  /* .about__img {
     width: 50px;
-  }
+  } */
 
   .adv__container {
     grid-template-columns: repeat(6, max-content);
