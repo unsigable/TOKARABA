@@ -59,6 +59,30 @@ let swiperCharges = new Swiper(".charges__container", {
     },
   });
 
+/*=============== PARTNERS SWIPER ===============*/
+let swiperPartners = new Swiper(".partners__container", {
+    spaceBetween: 30,
+    centeredSlides: false,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    loop: true,
+    slidesPerView: 1,
+    breakpoints: {
+        576: {
+            slidesPerView: 2,
+        },
+        767: {
+            slidesPerView: 3,
+        },
+    },
+});
+
 /*=============== MIXITUP FILTER CATALOG ===============*/
 let mixerCatalog = mixitup('.catalog__content', {
     selectors: {
@@ -109,23 +133,23 @@ const scrollActive = () =>{
 window.addEventListener('scroll', scrollActive)
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
-const sr = ScrollReveal({
-    origin: 'top',
-    distance: '60px',
-    duration: 2500,
-    delay: 400,
-    // reset: true
-})
+// const sr = ScrollReveal({
+//     origin: 'top',
+//     distance: '60px',
+//     duration: 2500,
+//     delay: 400,
+//     reset: true
+// })
 
-sr.reveal(`.home__title, .catalog__filters, .map__img, .charges__container`)
-sr.reveal(`.home__subtitle`, {delay: 500})
-sr.reveal(`.home__elec`, {delay: 600})
-sr.reveal(`.home__img`, {delay: 800})
-sr.reveal(`.home__car-data`, {delay: 900, interval: 100, origin: 'bottom'})
-sr.reveal(`.home__button`, {delay: 1000, origin: 'bottom'})
-sr.reveal(`.about__content, .adv__content, .credit__content`, {interval: 150})
-sr.reveal(`.compare__data, .order__data, .news__group, .faq__group`, {origin: 'left'})
-sr.reveal(`.compare__img, .order__img, .news__data, .faq__data`, {origin: 'right'})
-sr.reveal(`.map__bg`, {delay: 600, origin: 'bottom'})
-sr.reveal(`.map__card`, {interval: 300})
-sr.reveal(`.catalog__card, .partners__content, .logos__content, .footer__content`, {interval: 100})
+// sr.reveal(`.home__title, .catalog__filters, .map__img, .charges__container`)
+// sr.reveal(`.home__subtitle`, {delay: 500})
+// sr.reveal(`.home__elec`, {delay: 600})
+// sr.reveal(`.home__img`, {delay: 800})
+// sr.reveal(`.home__car-data`, {delay: 900, interval: 100, origin: 'bottom'})
+// sr.reveal(`.home__button`, {delay: 1000, origin: 'bottom'})
+// sr.reveal(`.about__content, .adv__content, .credit__content`, {interval: 150})
+// sr.reveal(`.compare__data, .order__data, .news__group, .faq__group`, {origin: 'left'})
+// sr.reveal(`.compare__img, .order__img, .news__data, .faq__data`, {origin: 'right'})
+// sr.reveal(`.map__bg`, {delay: 600, origin: 'bottom'})
+// sr.reveal(`.map__card`, {interval: 300})
+// sr.reveal(`.catalog__card, .partners__content, .logos__content, .footer__content`, {interval: 100})

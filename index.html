@@ -33,14 +33,14 @@
                             <a href="#home" class="nav__link active-link">Главная</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#catalog" class="nav__link">Каталог</a>
+                            <a href="#charges" class="nav__link">Зарядные станции</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#news" class="nav__link">Статьи</a>
+                            <a href="#catalog" class="nav__link">Электромобили</a>
                         </li>
-                        <li class="nav__item">
-                            <a href="#map" class="nav__link">Карта</a>
-                        </li>
+                        <!-- <li class="nav__item">
+                            <a href="#news" class="nav__link">Новости</a>
+                        </li> -->
                     </ul>
 
                     <div class="nav__close" id="nav-close">
@@ -77,6 +77,19 @@
             </nav>
         </header>
 
+        <!-- ========= PRELOADER ========= -->
+        <div id="preloader">
+            <div class="preloader_container">
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+        
+            <p class="loading">
+                TOKARABA <span>loading...</span>
+            </p>
+            </div>
+        </div>
+
         <!--==================== MAIN ====================-->
         <main class="main">
             <!--==================== HOME ====================-->
@@ -87,8 +100,8 @@
                 <div class="home__container container grid">
                     <div class="home__data">
                         <h1 class="home__title">
-                            <!-- Заказать <span>электромобиль</span> -->
-                            Выбрать <span>электромобиль</span>
+                            Заказать <span>электромобиль</span>
+                            <!-- Выбрать <span>электромобиль</span> -->
                             <!-- <span>Электромобили</span> на заказ -->
                         </h1>
 
@@ -98,7 +111,9 @@
 
                         <h3 class="home__elec">
                             <i class="ri-flashlight-fill"></i>
-                                <a href="#">Описание</a>
+                                <a href="#">
+                                    Описание
+                                </a>
                             <i class="ri-flashlight-fill"></i>
                         </h3>
                     </div>
@@ -141,54 +156,112 @@
                 </div>
             </section>
 
-            <!--==================== LOGOS ====================-->
-            <section class="logos section">
-                <div class="logos__container container grid">
-                    <div class="logos__content">
-                        <img src="./img/logo1.png" alt="" class="logos__img">
+            <!--==================== LOGOS TOP ====================-->
+            <section class="logos top section">
+                <div class="logos__container scroll__box">
+                    <div class="scroll ImgBox" style="--time:90s">
+                        <div class="logos__content">
+                            <img src="./img/icons_128x/bmw.png" alt="" class="logos__scroll-img">
+                            <img src="./img/icons_128x/byd.png" alt="" class="logos__scroll-img">
+                            <img src="./img/icons_128x/changan.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/chery.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/dfm.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/faw.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/gac.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/geely.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/greatwall.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/hafei.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/honda.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/hozon.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/jac.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/lambo.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/li_auto.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/mitsu.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/nio.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/nissan.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/porsche.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/tesla.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/toyota.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/wm.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/xpeng.png" alt="" class="logos__scroll-img"">
+                        </div>
+                        <div class="logos__content">
+                            <img src="./img/icons_128x/bmw.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/byd.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/changan.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/chery.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/dfm.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/faw.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/gac.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/geely.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/greatwall.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/hafei.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/honda.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/hozon.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/jac.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/lambo.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/li_auto.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/mitsu.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/nio.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/nissan.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/porsche.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/tesla.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/toyota.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/wm.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/xpeng.png" alt="" class="logos__scroll-img"">
+                        </div>
+                    </div>
+                </div>
+
+                    <!-- <div class="logos__content">
+                        <img src="./img/logo1.png" alt="" class="logos__scroll-img"">
                     </div>
 
                     <div class="logos__content">
-                        <img src="./img/logo2.png" alt="" class="logos__img">
+                        <img src="./img/logo2.png" alt="" class="logos__scroll-img"">
                     </div>
 
                     <div class="logos__content">
-                        <img src="./img/logo3.png" alt="" class="logos__img">
+                        <img src="./img/logo3.png" alt="" class="logos__scroll-img"">
                     </div>
 
                     <div class="logos__content">
-                        <img src="./img/logo4.png" alt="" class="logos__img">
+                        <img src="./img/logo4.png" alt="" class="logos__scroll-img"">
                     </div>
 
                     <div class="logos__content">
-                        <img src="./img/logo5.png" alt="" class="logos__img">
+                        <img src="./img/logo5.png" alt="" class="logos__scroll-img"">
                     </div>
 
                     <div class="logos__content">
-                        <img src="./img/logo6.png" alt="" class="logos__img">
-                    </div>
+                        <img src="./img/logo6.png" alt="" class="logos__scroll-img"">
+                    </div> -->
                 </div>
             </section>
 
             <!--==================== ABOUT ====================-->
             <section class="about section">
                 <h2 class="section__title">
-                    Заказать <span>Электромобиль</span><br>
-                    <span> в Кыргызстане</span> Легко!
+                    Как Заказать<br>
+                    <span>Электромобиль в Кыргызстане</span>
                 </h2>
                 
                 <div class="about__container container grid">
                     <div class="about__card">
+                        <div class="shape shape__smaller"></div>
+
                         <div class="about__number">
                             <button class="about__button">1</button>
                         </div>
 
                         <h3 class="about__card-text">
-                            Выберите подходящий Вам электромобиль
+                            Выберите подходящий электромобиль
                         </h3>
                     </div>
 
                     <div class="about__card">
+                        <div class="shape shape__smaller"></div>
+
                         <div class="about__number">
                             <button class="about__button">2</button>
                         </div>
@@ -199,6 +272,8 @@
                     </div>
 
                     <div class="about__card">
+                        <div class="shape shape__smaller"></div>
+
                         <div class="about__number">
                             <button class="about__button">3</button>
                         </div>
@@ -209,12 +284,14 @@
                     </div>
 
                     <div class="about__card">
+                        <div class="shape shape__smaller"></div>
+
                         <div class="about__number">
                             <button class="about__button">4</button>
                         </div>
 
                         <h3 class="about__card-text">
-                            Дождитесь доставки и станьте счастливым автовладельцем
+                            Дождитесь доставки и получите электромобиль
                         </h3>
                     </div>
                 </div>
@@ -226,10 +303,12 @@
                     Наши преимущества
                 </h2>
                 
-                <div class="about__container container grid">
+                <div class="about__container-2 container grid">
                     <div class="about__card-2">
+                        <div class="shape shape__smaller"></div>
+
                         <div class="about__number-2">
-                            <i class="ri-truck-line"></i>
+                            <i class="ri-global-line"></i>
                         </div>
 
                         <h3 class="about__card-title-2">
@@ -238,12 +317,14 @@
 
                         <p class="about__card-desc-2">
                             Более 5 лет поставок<br>
-                            из Китая и США<br>
-                            по Кыргызстану и СНГ.
+                            в Кыргызстан и<br>
+                            страны СНГ.
                         </p>
                     </div>
 
                     <div class="about__card-2">
+                        <div class="shape shape__smaller"></div>
+
                         <div class="about__number-2">
                             <i class="ri-roadster-line"></i>
                         </div>
@@ -253,15 +334,33 @@
                         </h3>
 
                         <p class="about__card-desc-2">
-                            Более 20 заводов.<br>
-                            Более 50 видов<br>
-                            моделей.
+                            Более 20 компаний и<br>
+                            более 50 моделей<br>
+                            в каталоге.
                         </p>
                     </div>
 
                     <div class="about__card-2">
+                        <div class="shape shape__smaller"></div>
+
                         <div class="about__number-2">
-                            <i class="ri-battery-2-charge-line"></i>
+                            <i class="ri-hotel-line"></i>
+                        </div>
+
+                        <h3 class="about__card-title-2">
+                            Прямые<br> Поставки
+                        </h3>
+                        <p class="about__card-desc-2">
+                            Без посредников.<br>
+                            С заводов производителей.
+                        </p>
+                    </div>
+
+                    <div class="about__card-2">
+                        <div class="shape shape__smaller"></div>
+
+                        <div class="about__number-2">
+                            <i class="ri-charging-pile-line"></i>
                         </div>
 
                         <h3 class="about__card-title-2">
@@ -271,21 +370,6 @@
                             Более 15 зарядных<br>
                             станций общего<br>
                             доступа в г. Бишкек.
-                        </p>
-                    </div>
-
-                    <div class="about__card-2">
-                        <div class="about__number-2">
-                            <i class="ri-hotel-line"></i>
-                        </div>
-
-                        <h3 class="about__card-title-2">
-                            Прямые<br> Поставки
-                        </h3>
-                        <p class="about__card-desc-2">
-                            С официальных<br>
-                            заводов производителя.<br>
-                            Без посредников.
                         </p>
                     </div>
                 </div>
@@ -1366,7 +1450,7 @@
             </section>
 
             <!--==================== COMPARE ====================-->
-            <section class="compare section">
+            <!-- <section class="compare section">
                 <div class="compare__container container grid">
                     <img src="./img/offer-bg.png" alt="" class="compare__bg">
 
@@ -1386,7 +1470,8 @@
 
                     <img src="./img/offer.png" alt="" class="compare__img">
                 </div>
-            </section>
+            </section> -->
+
 
             <!--==================== CREDIT ====================-->
             <section class="credit section">
@@ -1523,7 +1608,7 @@
             </section>
 
             <!--==================== ORDER/SUBMIT ====================-->
-            <section class="order section">
+            <!-- <section class="order section">
                 <div class="order__container container grid">
                     <img src="./img/offer-bg.png" alt="" class="order__bg">
 
@@ -1543,10 +1628,10 @@
 
                     <img src="./img/car/home/byd_yuan_plus.png" alt="" class="order__img">
                 </div>
-            </section>
+            </section> -->
 
             <!--==================== ARTICLES/NEWS ====================-->
-            <section class="news section" id="news">
+            <!-- <section class="news section" id="news">
                 <h2 class="section__title news__title">
                     Новости
                 </h2>
@@ -1577,10 +1662,10 @@
                         <a href="#" class="button">Читать</a>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
             <!--==================== CHARGE STATION's MAP ====================-->
-            <section class="map section" id="map">
+            <!-- <section class="map section" id="map">
                 <h2 class="section__title">
                     Зарядные станции г. Бишкек
                 </h2>
@@ -1607,22 +1692,18 @@
                 </div>
 
                 <img src="./img/map.svg" alt="" class="map__bg">
-            </section>
+            </section> -->
 
             <!--==================== CHARGES ====================-->
-            <section class="charges section">
+            <!-- <section class="charges section">
                 <h2 class="section__title">
                     Зарядные устройства и Станции <br> в наличие и на заказ
-                    <!-- Choose Your Electric Car <br> Of The Porsche Brand -->
                 </h2>
 
                 <div class="charges__container container swiper">
                     <div class="swiper-wrapper">
                         <article class="charges__card swiper-slide">
                             <div class="shape shape__smaller"></div>
-
-                            <!-- <h1 class="charges__title">Porsche</h1>
-                            <h3 class="charges__subtitle">Turbo S</h3> -->
 
                             <img src="./img/charges/tesla.png" alt="" class="charges__img">
 
@@ -1635,16 +1716,13 @@
                         <article class="charges__card swiper-slide">
                             <div class="shape shape__smaller"></div>
 
-                            <!-- <h1 class="charges__title">Porsche</h1>
-                            <h3 class="charges__subtitle">Taycan</h3> -->
-
                             <img src="./img/charges/bmw.png" alt="" class="charges__img">
 
                             <a href="#" class="charges__button">
                                 <i class="ri-flashlight-fill"></i>
                                 <span>Описание</span>
                             </a>
-                        </article>
+                        </article> -->
 
                         <!-- <article class="charges__card swiper-slide">
                             <div class="shape shape__smaller"></div>
@@ -1688,11 +1766,8 @@
                             </a>
                         </article> -->
 
-                        <article class="charges__card swiper-slide">
+                        <!-- <article class="charges__card swiper-slide">
                             <div class="shape shape__smaller"></div>
-
-                            <!-- <h1 class="charges__title">Porsche</h1>
-                            <h3 class="charges__subtitle">Turbo S</h3> -->
 
                             <img src="./img/charges/tesla.png" alt="" class="charges__img">
 
@@ -1704,9 +1779,6 @@
 
                         <article class="charges__card swiper-slide">
                             <div class="shape shape__smaller"></div>
-
-                            <!-- <h1 class="charges__title">Porsche</h1>
-                            <h3 class="charges__subtitle">Taycan</h3> -->
 
                             <img src="./img/charges/bmw.png" alt="" class="charges__img">
 
@@ -1719,9 +1791,6 @@
                         <article class="charges__card swiper-slide">
                             <div class="shape shape__smaller"></div>
 
-                            <!-- <h1 class="charges__title">Porsche</h1>
-                            <h3 class="charges__subtitle">Turbo S</h3> -->
-
                             <img src="./img/charges/tesla.png" alt="" class="charges__img">
 
                             <a href="#" class="charges__button">
@@ -1732,9 +1801,6 @@
 
                         <article class="charges__card swiper-slide">
                             <div class="shape shape__smaller"></div>
-
-                            <!-- <h1 class="charges__title">Porsche</h1>
-                            <h3 class="charges__subtitle">Taycan</h3> -->
 
                             <img src="./img/charges/bmw.png" alt="" class="charges__img">
 
@@ -1747,10 +1813,10 @@
 
                     <div class="swiper-pagination"></div>
                 </div>
-            </section>
+            </section> -->
 
             <!--==================== FAQ ====================-->
-            <section class="faq section">
+            <!-- <section class="faq section">
                 <h2 class="section__title faq__title">
                     FAQ
                 </h2>
@@ -1777,7 +1843,7 @@
                         <a href="#" class="button">Know more</a>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
             <!--==================== PARTNERS ====================-->
             <section class="partners section">
@@ -1785,59 +1851,113 @@
                     Наши Партнёры
                 </h2>
 
-                <div class="partners__container container grid">
-                    <div class="partners__content">
-                        <img src="./img/logo1.png" alt="" class="partners__img">
+                <div class="partners__container container swiper">
+                    <div class="swiper-wrapper">
+                        <div class="partners__content swiper-slide">
+                            <img src="./img/bank/ab.png" alt="" class="partners__img">
+                        </div>
+    
+                        <div class="partners__content swiper-slide">
+                            <img src="./img/bank/btb.png" alt="" class="partners__img">
+                        </div>
+    
+                        <!-- <div class="partners__content swiper-slide">
+                            <img src="./img/bank/dcb.png" alt="" class="partners__img">
+                        </div> -->
+    
+                        <div class="partners__content swiper-slide">
+                            <img src="./img/bank/kkb.png" alt="" class="partners__img">
+                        </div>
+    
+                        <div class="partners__content swiper-slide">
+                            <img src="./img/bank/cbk.png" alt="" class="partners__img">
+                        </div>
                     </div>
-
-                    <div class="partners__content">
-                        <img src="./img/logo2.png" alt="" class="partners__img">
-                    </div>
-
-                    <div class="partners__content">
-                        <img src="./img/logo3.png" alt="" class="partners__img">
-                    </div>
-
-                    <div class="partners__content">
-                        <img src="./img/logo4.png" alt="" class="partners__img">
-                    </div>
-
-                    <div class="partners__content">
-                        <img src="./img/logo5.png" alt="" class="partners__img">
-                    </div>
-
-                    <div class="partners__content">
-                        <img src="./img/logo6.png" alt="" class="partners__img">
-                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
             </section>
 
-            <!--==================== LOGOS ====================-->
-            <section class="logos section">
-                <div class="logos__container container grid">
-                    <div class="logos__content">
-                        <img src="./img/logo1.png" alt="" class="logos__img">
+            <!--==================== LOGOS BOTTOM ====================-->
+            <section class="logos bottom section">
+                <div class="logos__container scroll__box">
+                    <div class="scroll ImgBox invert" style="--time:90s">
+                        <div class="logos__content">
+                            <img src="./img/icons_128x/bmw.png" alt="" class="logos__scroll-img">
+                            <img src="./img/icons_128x/byd.png" alt="" class="logos__scroll-img">
+                            <img src="./img/icons_128x/changan.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/chery.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/dfm.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/faw.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/gac.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/geely.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/greatwall.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/hafei.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/honda.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/hozon.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/jac.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/lambo.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/li_auto.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/mitsu.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/nio.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/nissan.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/porsche.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/tesla.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/toyota.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/wm.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/xpeng.png" alt="" class="logos__scroll-img"">
+                        </div>
+                        <div class="logos__content">
+                            <img src="./img/icons_128x/bmw.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/byd.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/changan.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/chery.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/dfm.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/faw.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/gac.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/geely.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/greatwall.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/hafei.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/honda.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/hozon.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/jac.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/lambo.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/li_auto.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/mitsu.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/nio.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/nissan.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/porsche.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/tesla.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/toyota.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/wm.png" alt="" class="logos__scroll-img"">
+                            <img src="./img/icons_128x/xpeng.png" alt="" class="logos__scroll-img"">
+                        </div>
+                    </div>
+                </div>
+
+                    <!-- <div class="logos__content">
+                        <img src="./img/logo1.png" alt="" class="logos__scroll-img"">
                     </div>
 
                     <div class="logos__content">
-                        <img src="./img/logo2.png" alt="" class="logos__img">
+                        <img src="./img/logo2.png" alt="" class="logos__scroll-img"">
                     </div>
 
                     <div class="logos__content">
-                        <img src="./img/logo3.png" alt="" class="logos__img">
+                        <img src="./img/logo3.png" alt="" class="logos__scroll-img"">
                     </div>
 
                     <div class="logos__content">
-                        <img src="./img/logo4.png" alt="" class="logos__img">
+                        <img src="./img/logo4.png" alt="" class="logos__scroll-img"">
                     </div>
 
                     <div class="logos__content">
-                        <img src="./img/logo5.png" alt="" class="logos__img">
+                        <img src="./img/logo5.png" alt="" class="logos__scroll-img"">
                     </div>
 
                     <div class="logos__content">
-                        <img src="./img/logo6.png" alt="" class="logos__img">
-                    </div>
+                        <img src="./img/logo6.png" alt="" class="logos__scroll-img"">
+                    </div> -->
                 </div>
             </section>
         </main>
@@ -1850,28 +1970,32 @@
             <div class="footer__container container grid">
                 <div class="footer__content">
                     <a href="#" class="footer__logo">
-                        <!-- <i class="ri-steering-line"></i> Elecar -->
                         <img src="./img/logo.png" alt="logo">
                     </a>
                     <p class="footer__description">
-                        Электромобили на заказ.<br>
-                        Зарядные станции, устройства<br>
-                        и прочие комплектующие.<br>
-                        Прямые поставки с<br> 
-                        заводов производителей<br>
+                        Зарядные станции и<br>
+                        электромобили на заказ.<br>
+                        Прямые поставки с<br>
                         Китая, США, Южной Кореи.
                     </p>
-                    <!-- <p class="footer__description">
-                        Доставка и продажа<br>
-                        электромобилей из<br>
-                        Китая, США и Кореи.
-                    </p> -->
 
                     <h3 class="footer__title">
                         Социальные сети:
                     </h3>
 
                     <ul class="footer__social">
+                        <a href="https://www.instagram.com/tokaraba.kg/" target="_blank" class="footer__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+
+                        <a href="https://www.youtube.com/channel/UC_tfyiBPiazGE0xQbuc0uTQ" target="_blank" class="footer__social-link">
+                            <i class="ri-youtube-line"></i>
+                        </a>
+
+                        <a href="https://www.facebook.com/tokaraba.kg?mibextid=ZbWKwL" target="_blank" class="footer__social-link">
+                            <i class="ri-facebook-circle-line"></i>
+                        </a>
+                        
                         <a href="https://telegram.me/+996998000133" target="_blank" class="footer__social-link">
                             <i class="ri-telegram-line"></i>
                         </a>
@@ -1880,21 +2004,9 @@
                             <i class="ri-whatsapp-line"></i>
                         </a>
 
-                        <a href="https://www.facebook.com/tokaraba.kg?mibextid=ZbWKwL" target="_blank" class="footer__social-link">
-                            <i class="ri-facebook-circle-line"></i>
-                        </a>
-
-                        <a href="https://www.tiktok.com/" target="_blank" class="footer__social-link">
+                        <!-- <a href="https://www.tiktok.com/" target="_blank" class="footer__social-link">
                             <i class="ri-tiktok-line"></i>
-                        </a>
-
-                        <a href="https://www.instagram.com/tokaraba.kg/" target="_blank" class="footer__social-link">
-                            <i class="ri-instagram-line"></i>
-                        </a>
-
-                        <a href="https://www.youtube.com/channel/UC_tfyiBPiazGE0xQbuc0uTQ" target="_blank" class="footer__social-link">
-                            <i class="ri-youtube-line"></i>
-                        </a>
+                        </a> -->
                     </ul>
                 </div>
 
@@ -1994,6 +2106,15 @@
         <a href="#" class="scrollup" id="scroll-up">
             <i class="ri-arrow-up-line"></i>
         </a>
+
+        <!-- ========= PRELOADER SCRIPT ========= -->
+        <script>
+            const loader = document.getElementById('preloader');
+
+            window.addEventListener('load', function(){
+            loader.style.display = "none";
+            })
+        </script>
 
         <!--=============== SCROLL REVEAL ===============-->
         <!-- <script src="./js/scrollreveal.min.js"></script> -->
