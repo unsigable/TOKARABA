@@ -2004,6 +2004,10 @@ img {
     margin-right: auto;
   }
 
+  .nav__link {
+    font-size: 1.2rem;
+  }
+
   .shape__big {
     width: 500px;
     height: 500px;
