@@ -24,7 +24,8 @@ FONTS - Google Fonts - https://fonts.google.com/
 
 ICONS - Remix Icon - https://remixicon.com/
 
-02/12/23
+
+started: 02/12/23
 
 
 result: https://unsigable.github.io/TOKARABA/
