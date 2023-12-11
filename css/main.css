@@ -340,6 +340,16 @@ img {
   color: var(--first-color);
 }
 
+/* PHONES NUMBERS */
+.nav__contacts {
+  display: none;
+}
+
+.nav__contacts-number {
+  color: white;
+}
+
+/* Close menu button */
 .nav__close {
   font-size: 2rem;
   color: var(--white-color);
@@ -428,13 +438,14 @@ img {
 }
 
 .home__elec a {
-  color: var(--text-color-light);
+  font-weight: 600;
+  color: white;
   letter-spacing: .1rem;
   z-index: 10;
 }
 
 .home__elec a:hover {
-  color:var(--white-color);
+  color: var(--first-color);
 }
 
 .home__elec i {
@@ -488,9 +499,9 @@ img {
   font-size: 1.5rem;
 }
 
-.home__container button {
+/* .home__container button {
   border: none;
-  /* outline: none; */
+  outline: none;
   background: transparent;
   cursor: pointer;
 
@@ -502,7 +513,7 @@ img {
   align-items: center;
   justify-content: center;
   justify-self: center;
-}
+} */
 
 .home__car-choose {
   position: absolute;
@@ -516,9 +527,9 @@ img {
   right: -10rem;
 }
 
-.home__button {
+/* .home__button {
   position: relative;
-  /* border: 2px solid hsl(158, 89%, 30%); */
+  border: 2px solid hsl(158, 89%, 30%);
   border: 2px solid var(--first-color);
   width: 75px;
   height: 75px;
@@ -530,21 +541,21 @@ img {
   font-size: var(--small-font-size);
   color: var(--white-color);
   font-weight: var(--font-medium);
-}
+} */
 
-.home__button::before {
+/* .home__button::before {
   content: '';
-  /* border: 2px solid hsl(158, 98%, 43%); */
+  border: 2px solid hsl(158, 98%, 43%);
   border: 2px solid var(--first-color);
   width: 90px;
   height: 90px;
   position: absolute;
   border-radius: 50%;
-  /* box-shadow: 0 0 12px hsl(158, 98%, 43%); */
+  box-shadow: 0 0 12px hsl(158, 98%, 43%);
   box-shadow: 0 0 12px var(--first-color);
   transition: .3s;
   animation: button 3s infinite;
-}
+} */
 
 /* Button animate */
 @keyframes button {
@@ -703,6 +714,153 @@ img {
   }
 }
 
+/*=============== ABOUT ===============*/
+.about {
+  background-color: var(--body-color);
+}
+
+
+.about__container {
+  grid-template-columns: 230px;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  padding-bottom: 1rem;
+
+  margin-top: 7rem;
+}
+
+.about__card {
+  width: 90%;
+  height: 200px;
+  position: relative;
+  background-color: #0a0a0b87;
+  padding: 1.5rem;
+  border: 2px solid var(--first-color);
+  border-radius: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  box-shadow: 0 0 12px var(--first-color);
+  transition: .3s;
+}
+
+.about__card .shape__smaller {
+  background-color: hsla(179, 33%, 32%, 0.641);
+
+  width: 120px;
+  height: 120px;
+
+  position: absolute;
+  inset: 0;
+  margin: auto;
+}
+
+.about__card-img i {
+  font-size: 3rem;
+}
+
+.about__number {
+  position: absolute;
+  top: -2.7rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  border: 2px solid var(--first-color);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  background: var(--body-color);
+
+  box-shadow: 0 0 12px var(--first-color);
+  transition: .3s;
+}
+
+.about__number-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  
+  width: 50px;
+  height: 50px;
+  border: 2px solid var(--first-color);
+  border-radius: 50%;
+  font-size: 1.65rem;
+  color: var(--white-color);
+  font-weight: var(--font-medium);
+
+  outline: none;
+  background: var(--body-color);
+}
+
+/*=============== ADVENTAGES ===============*/
+.adv {
+  background: var(--body-color);
+}
+
+.adv__container {
+  grid-template-columns: 230px;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  padding-bottom: 1rem;
+
+  margin-top: 4rem;
+}
+
+.adv > .section__title {
+  font-size: 2rem;
+  color: var(--first-color);
+}
+
+.adv__number {
+  /* display: none; */
+  font-size: 3rem;
+}
+
+.adv__card {
+  width: 90%;
+  height: 250px;
+  position: relative;
+  /* background-color: #0a0a0b87; */
+  background-color: var(--container-color);
+  padding: 2rem 1.5rem;
+  /* border: 2px solid var(--first-color); */
+  border-radius: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+
+  overflow: hidden;
+}
+
+.adv__card .shape__smaller {
+  position: absolute;
+  top: -2.5rem;
+  left: -2.5rem;
+}
+
+.adv__card-title {
+  font-weight: 700;
+  color: var(--first-color);
+}
+
+.adv__card-desc {
+  font-size: 0.9rem;
+}
+
 /*=============== MAIN MAP ===============*/
 .map {
   overflow: hidden;
@@ -717,21 +875,17 @@ img {
   position: relative;
 }
 
-.map__bg-2 {
+.map__bg {
   border-radius: 1rem;
   box-shadow: 0 0 12px hsl(158, 98%, 43%);
 
   width: 350px;
 }
 
-/* .map__content {
-  position: relative;
-} */
-
 .map__card {
   width: 120px;
-  background-color: hsla(0, 0%, 100%, .1);
-  backdrop-filter: blur(16px);
+  background-color: hsla(192, 93%, 49%, 0.179);
+  backdrop-filter: blur(5px);
   border-radius: 1.25rem;
   padding: 0.75rem 2rem;
   display: flex;
@@ -740,12 +894,19 @@ img {
   text-align: center;
   color: var(--title-color);
   position: absolute;
+
+  box-shadow: 0 0 12px hsl(158, 98%, 43%);
 }
 
 .map__card-title {
-  color: #00ac2b;
+  color: var(--text-color);
   font-size: var(--h3-font-size);
+  font-weight: 700;
   margin-bottom: 0.25rem;
+}
+
+.map__card-title:hover {
+  color: var(--first-color-alt);
 }
 
 .map__card-description {
@@ -776,197 +937,6 @@ img {
   font-size: var(--smaller-font-size);
 }
 
-/*=============== ABOUT ===============*/
-.about {
-  /* background-image: url(../img/2cars.jpeg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-blend-mode: multiply; */
-  background-color: var(--body-color);
-}
-
-/* .about__img {
-  width: 40px;
-  opacity: .4;
-  transition: .3s;
-} */
-
-.about__container {
-  grid-template-columns: 230px;
-  justify-content: center;
-  align-items: center;
-  gap: 5rem;
-  padding-bottom: 1rem;
-
-  margin-top: 7rem;
-}
-
-.about__card {
-  width: 90%;
-  height: 200px;
-  position: relative;
-  background-color: #0a0a0b87;
-  padding: 1.5rem;
-  border: 2px solid var(--first-color);
-  border-radius: 1rem;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-
-  /* animation: button 3s infinite; */
-  box-shadow: 0 0 12px var(--first-color);
-  transition: .3s;
-}
-
-.about__card .shape__smaller {
-  background-color: hsla(179, 33%, 32%, 0.641);
-
-  width: 120px;
-  height: 120px;
-
-  position: absolute;
-  inset: 0;
-  margin: auto;
-}
-
-.about__card-img i {
-  font-size: 3rem;
-}
-
-.about__number {
-  position: absolute;
-  top: -2.7rem;
-  left: 50%;
-  transform: translateX(-50%);
-
-  border: 2px solid var(--first-color);
-  width: 75px;
-  height: 75px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  justify-self: center;
-  background: var(--body-color);
-
-  /* animation: button 3s infinite; */
-  box-shadow: 0 0 12px var(--first-color);
-  transition: .3s;
-}
-
-.about__button {
-  /* position: relative; */
-  /* border: 2px solid hsl(158, 89%, 30%); */
-  width: 50px;
-  height: 50px;
-  border: 2px solid var(--first-color);
-  border-radius: 50%;
-  font-size: 1.8rem;
-  color: var(--white-color);
-  font-weight: var(--font-medium);
-
-  outline: none;
-  background: var(--body-color);
-}
-
-/*=============== ABOUT-2 ===============*/
-.about-2 {
-  /* background-image: url(../img/2cars.jpeg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-blend-mode: multiply; */
-  background: var(--body-color);
-}
-
-.about__container-2 {
-  grid-template-columns: 230px;
-  justify-content: center;
-  align-items: center;
-  gap: 5rem;
-  padding-bottom: 1rem;
-
-  margin-top: 4rem;
-}
-
-.about-2 > .section__title {
-  font-size: 2rem;
-  color: var(--first-color);
-}
-
-.about__number-2 {
-  /* display: none; */
-  font-size: 3rem;
-}
-
-/* .about__img {
-  width: 40px;
-  opacity: .4;
-  transition: .3s;
-} */
-
-.about__card-2 {
-  width: 90%;
-  height: 250px;
-  position: relative;
-  /* background-color: #0a0a0b87; */
-  background-color: var(--container-color);
-  padding: 2rem 1.5rem;
-  /* border: 2px solid var(--first-color); */
-  border-radius: 1rem;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  justify-content: space-between;
-
-  overflow: hidden;
-}
-
-.about__card-2 .shape__smaller {
-  position: absolute;
-  top: -2.5rem;
-  left: -2.5rem;
-}
-
-.about__card-title-2 {
-  font-weight: 700;
-  color: var(--first-color);
-}
-
-/* .about__card-text-2 {
-  font-size: 1.2rem;
-  margin-bottom: 1.5rem;
-} */
-
-.about__card-desc-2 {
-  font-size: 0.9rem;
-}
-
-/*=============== ADVENTAGES ===============*/
-.adv__img {
-  width: 40px;
-  opacity: .4;
-  transition: .3s;
-}
-
-.adv__container {
-  grid-template-columns: repeat(3, max-content);
-  justify-content: center;
-  align-items: center;
-  gap: 4rem;
-  padding-bottom: 2rem;
-}
-
-.adv__img:hover {
-  opacity: 1;
-}
-
 /*=============== CATALOG ===============*/
 .catalog__container {
   max-width: 80%;
@@ -988,7 +958,7 @@ img {
   height: 48px;
   border: none;
   outline: none;
-  padding: 0.75rem;
+  /* padding: 0.75rem; */
   border-radius: .75rem;
   background-color: var(--container-color);
   color: var(--white-color);
@@ -1737,7 +1707,7 @@ img {
 /* For small devices */
 @media screen and (min-width: 320px) {
   .section__title {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -1749,14 +1719,6 @@ img {
 
   .home__car {
     column-gap: 1.7rem;
-  }
-
-  /* .about__container {
-    gap: 2.5rem;
-  } */
-
-  .adv__container {
-    gap: 2.5rem;
   }
 
   .compare__container {
@@ -1784,10 +1746,6 @@ img {
   .faq__card {
     width: 150px;
   }
-
-  /* .partners__container {
-    gap: 2.5rem;
-  } */
 
   .logos__container {
     gap: 2.5rem;
@@ -1818,7 +1776,23 @@ img {
     margin: 0 2rem;
   }
 
-  .map__bg-2 {
+  .about__container {
+    grid-template-columns: repeat(2, 240px);
+    gap: 3.5rem 5.5rem;
+  }
+
+  .adv__container {
+    grid-template-columns: repeat(2, 240px);
+    gap: 3.5rem 5.5rem;
+  }
+  .adv > .section__title {
+    font-size: 3rem;
+    color: transparent;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: var(--first-color);
+  }
+
+  .map__bg {
     width: 450px;
   }
   .map__card-1 {
@@ -1832,23 +1806,6 @@ img {
   .map__card-3 {
     left: 15rem;
     bottom: 2rem;
-  }
-
-  .about-2 > .section__title {
-    font-size: 3rem;
-    color: transparent;
-    -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: var(--first-color);
-  }
-
-  .about__container-2 {
-    grid-template-columns: repeat(2, 240px);
-    gap: 3.5rem 5.5rem;
-  }
-
-  .about__container {
-    grid-template-columns: repeat(2, 240px);
-    gap: 3.5rem 5.5rem;
   }
   
   .catalog__content {
@@ -1892,11 +1849,6 @@ img {
     justify-self: center;
   }
 
-  /* .map__bg {
-    left: 0;
-    right: 0;
-  } */
-
   .faq__group {
     width: 350px;
     justify-self: center;
@@ -1932,17 +1884,15 @@ img {
   .nav__icons {
     display: block;
   }
+  .nav__contacts {
+    display: block;
+  }
 
   section#home {
     padding-top: 5rem;
   }
 
-  /* .about__container {
-    grid-template-columns: repeat(3, 240px);
-    gap: 3.5rem 5.5rem;
-  } */
-
-  .map__bg-2 {
+  .map__bg {
     width: 650px;
   }
   .map__card {
@@ -1968,10 +1918,6 @@ img {
     bottom: 2rem;
   }
 
-  .adv__container {
-    gap: 4rem 8rem;
-  }
-
   .credit__container {
     gap: 1.5rem 2rem;
   }
@@ -1983,10 +1929,6 @@ img {
   .faq__container {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  /* .partners__container {
-    gap: 4rem 8rem;
-  } */
 
   .logos__container {
     gap: 4rem 8rem;
@@ -2043,7 +1985,17 @@ img {
     padding: 3rem 2rem;
   }
 
-  .map__bg-2 {
+  .about__container {
+    grid-template-columns: repeat(4, 245px);
+    column-gap: 1.2rem;
+  }
+
+  .adv__container {
+    grid-template-columns: repeat(4, 245px);
+    column-gap: 1.2rem;
+  }
+
+  .map__bg {
     width: 750px;
   }
   .map__card {
@@ -2067,26 +2019,6 @@ img {
   .map__card-3 {
     right: 18rem;
     bottom: 2rem;
-  }
-
-  .about__container-2 {
-    grid-template-columns: repeat(4, 245px);
-    column-gap: 1.2rem;
-  }
-
-  .about__container {
-    grid-template-columns: repeat(4, 245px);
-    column-gap: 1.2rem;
-  }
-  /* .about__img {
-    width: 50px;
-  } */
-
-  .adv__container {
-    grid-template-columns: repeat(6, max-content);
-  }
-  .adv__img {
-    width: 50px;
   }
 
   .catalog__container {
@@ -2131,9 +2063,6 @@ img {
   .credit__container {
     grid-template-columns: repeat(3, 250px);
   }
-  /* .credit__img {
-    width: 50px;
-  } */
 
   .order__container {
     grid-template-columns: repeat(2, 1fr);
@@ -2172,54 +2101,6 @@ img {
     margin-bottom: 3rem;
   }
 
-  .map__container {
-    padding: 2rem 0 1.5rem;
-  }
-  .map__bg-2 {
-    width: 750px;
-  }
-  .map__card {
-    width: 150px;
-    padding: .75rem 2.5rem;
-  }
-  .map__card-description {
-    font-size: 1rem;
-  }
-  .map__card-1 {
-    top: 4rem;
-    left: 12rem;
-  }
-  .map__card-2 {
-    top: 8rem;
-    right: 15rem;
-  }
-  
-  .map__card-3 {
-    left: 23rem;
-    bottom: 7.5rem;
-  }
-  /* .map__img {
-    width: 200px;
-  } */
-  /* .map__card {
-    width: 127px;
-    padding: .75rem 2.5rem;
-  }
-  .map__card-1 {
-    left: -1rem;
-  }
-  .map__card-2 {
-    right: -2.5rem;
-  }
-  .map__card-3 {
-    bottom: 7rem;
-    left: -1rem;
-  }
-  .map__bg {
-    width: 650px;
-    top: 11rem;
-  } */
-
   .charges__container {
     width: 875px;
     padding-top: 3rem;
@@ -2251,9 +2132,6 @@ img {
     margin-bottom: 3rem;
   }
 
-  /* .partners__container {
-    grid-template-columns: repeat(6, max-content);
-  } */
   .partners__img {
     width: 150px;
   }
